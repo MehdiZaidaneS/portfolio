@@ -3,6 +3,18 @@ body {
 }
 
 .navbar{
+    background-color: gray;
     display: flex;
-    flex-direction: column;
+    flex-direction: inline;
+    font-size: 25px;
 }
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar a:hover{
+    color: white;
+}
+

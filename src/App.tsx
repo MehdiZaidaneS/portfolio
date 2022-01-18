@@ -9,6 +9,7 @@ import {
 import SomeExampleComponent from './components/example/someExampleComponent';
 import MyFirstComponent from './components/myFirstComponent';
 import ClickCount from './components/clickCount/clickCount';
+import Etusivu from './components/myPortfolioComp/etusivu';
 import styles from './App.module.scss';
 
 const App: React.FC = () => {
@@ -17,18 +18,20 @@ const App: React.FC = () => {
       
       {/* The navigation bar and other components you want to display on all pages come here */}
       <div className={styles.navbar}>
-        <Link to='/'>Front page</Link>
-        <Link to='example'>Look my example component</Link>
+        <Link to='/'>Home</Link>
+        <Link to='projects'>Projects</Link>
+        <Link to= 'cv'>CV</Link>
       </div>
 
       <Switch>
         {/* Changing content comes here */}
-        <Route exact path='/' component={MyFirstComponent} />
-        <Route exact path='/example' component={SomeExampleComponent}/>
+        <Route exact path='/' component={Etusivu} />
+        <Route exact path='/projects' component={SomeExampleComponent}/>
+        <Route exact path= '/cv' component={SomeExampleComponent} />
       </Switch>
 
       {/* The footer and other components you want to display on all pages come here */}
-      <ClickCount />
+      
 
     </Router>
   )
