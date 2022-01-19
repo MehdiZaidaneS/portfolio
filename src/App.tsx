@@ -11,6 +11,7 @@ import MyFirstComponent from './components/myFirstComponent';
 import ClickCount from './components/clickCount/clickCount';
 import Etusivu from './components/myPortfolioComp/etusivu';
 import styles from './App.module.scss';
+import Footer from './components/myPortfolioComp/footer';
 
 const App: React.FC = () => {
   return (
@@ -31,7 +32,7 @@ const App: React.FC = () => {
       </Switch>
 
       {/* The footer and other components you want to display on all pages come here */}
-      
+      <Footer />
 
     </Router>
   )

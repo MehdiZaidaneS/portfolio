@@ -1,7 +1,16 @@
+
 .columns{
+    background: url(pexels-evie-shaffer-4004374.jpg) no-repeat center center/cover;
     display: flex;
     flex-direction: inline;
     padding-top: 20px;
+    color: white;
+    margin-top: 25px;
+}
+
+.firstColumn button{
+    margin-top: 10px;
+    margin-left: 305px;
 }
 
 p{
@@ -10,8 +19,10 @@ p{
     font-size: 20px;
 }
 
-img{
+.secondColumn img{
     margin-left: 120px;
+    margin-bottom: 20px;
+    border-radius:100%;
 }
 
 h1{
@@ -22,4 +33,44 @@ h1{
 
 .firstColumn{
     padding-left: 70px;
+}
+
+
+.proyectos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.imgbutton{
+    text-align: center;
+    margin-top: 20px;
+}
+
+button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: white 1px solid;
+    font-size: 18px;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.proyectos img:hover{
+    opacity: 100%;
+    border: rgb(255, 255, 255) solid 1px;
+    cursor: pointer;
 }
