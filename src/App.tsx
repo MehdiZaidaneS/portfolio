@@ -7,11 +7,10 @@ import {
   Link
 } from 'react-router-dom';
 import SomeExampleComponent from './components/example/someExampleComponent';
-import MyFirstComponent from './components/myFirstComponent';
-import ClickCount from './components/clickCount/clickCount';
 import Etusivu from './components/myPortfolioComp/etusivu';
 import styles from './App.module.scss';
 import Footer from './components/myPortfolioComp/footer';
+import Projektisivu from './components/myPortfolioComp/projektisivu';
 
 const App: React.FC = () => {
   return (
@@ -27,7 +26,7 @@ const App: React.FC = () => {
       <Switch>
         {/* Changing content comes here */}
         <Route exact path='/' component={Etusivu} />
-        <Route exact path='/projects' component={SomeExampleComponent}/>
+        <Route exact path='/projects' component={Projektisivu}/>
         <Route exact path= '/cv' component={SomeExampleComponent} />
       </Switch>
 

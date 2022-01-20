@@ -22,7 +22,7 @@ const Etusivu: React.FC<EtusivuProps> = () => {
           <button>Learn More</button>
       </div>
       <div className={styles.secondColumn}>
-          <img src={img} width={200}height={310}></img>
+          <img src={img} alt='' width={200}height={310}></img>
       </div>
     </div>
     
@@ -31,13 +31,13 @@ const Etusivu: React.FC<EtusivuProps> = () => {
     </div>
     <div className={styles.proyectos}>
          <div className={styles.firstImg}>
-           <img src={santa} width={300}height={300}></img>
+           <img src={santa} alt='' width={300}height={300}></img>
          </div>
          <div className={styles.secondImg}>
-           <img src={web} width={300}height={300}></img>
+           <img src={web} alt='' width={300}height={300}></img>
          </div>
          <div className={styles.thirdImg}>
-           <img src={wolfgame} width={300}height={300}></img>
+           <img src={wolfgame} alt='' width={300}height={300}></img>
          </div> 
     </div>
     <div className={styles.imgbutton}>
