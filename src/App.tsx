@@ -6,7 +6,7 @@ import {
   Route,
   Link
 } from 'react-router-dom';
-import SomeExampleComponent from './components/example/someExampleComponent';
+import Cv from './components/myPortfolioComp/cv';
 import Etusivu from './components/myPortfolioComp/etusivu';
 import styles from './App.module.scss';
 import Footer from './components/myPortfolioComp/footer';
@@ -27,7 +27,7 @@ const App: React.FC = () => {
         {/* Changing content comes here */}
         <Route exact path='/' component={Etusivu} />
         <Route exact path='/projects' component={Projektisivu}/>
-        <Route exact path= '/cv' component={SomeExampleComponent} />
+        <Route exact path= '/cv' component={Cv} />
       </Switch>
 
       {/* The footer and other components you want to display on all pages come here */}

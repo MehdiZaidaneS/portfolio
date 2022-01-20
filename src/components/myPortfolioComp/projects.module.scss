@@ -1,13 +1,28 @@
-.project {
-    color: black;
+.project h1{
+    color: white;
+    font-size: 40px;
 }
 
-.project{
+.pack{
     display: flex;
     flex-direction: inline;
 }
 
 .cosas{
     position: absolute;
-    
+    background-color: rgba(128, 128, 128, 0.61);
+}
+
+.cosas p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0 auto;
+}
+
+.project div{
+    text-align: center;
+    justify-content: center;
+}
+
+.pack img:hover{
+    cursor: pointer;
 }

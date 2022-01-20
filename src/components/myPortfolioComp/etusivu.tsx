@@ -26,18 +26,18 @@ const Etusivu: React.FC<EtusivuProps> = () => {
       </div>
     </div>
     
-    <div>
+    <div className={styles.titulo}>
       <h3>Recent projects</h3>
     </div>
     <div className={styles.proyectos}>
          <div className={styles.firstImg}>
-           <img src={santa} alt='' width={300}height={300}></img>
+           <img src={santa} alt='' width={300}height={200}></img>
          </div>
          <div className={styles.secondImg}>
-           <img src={web} alt='' width={300}height={300}></img>
+           <img src={web} alt='' width={300}height={200}></img>
          </div>
          <div className={styles.thirdImg}>
-           <img src={wolfgame} alt='' width={300}height={300}></img>
+           <img src={wolfgame} alt='' width={300}height={200}></img>
          </div> 
     </div>
     <div className={styles.imgbutton}>
