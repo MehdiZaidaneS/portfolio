@@ -62,3 +62,36 @@ li{
     display: flex;
     flex-direction: inline;
 }
+
+.columnaDerecha{
+    padding-top: 40px;
+}
+
+.columnaDerecha h1 {
+    color: blue;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    margin-left: 50px; 
+    
+ }
+
+ .columnaDerecha p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 70px;
+}
+
+.columnaDerecha h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 70px;
+    font-size: 20px;
+}
+
+
+.education{
+   padding-top: 12px;
+}
+
+.columnaDerecha hr{
+    width: 95%;
+    margin-left: 40px;
+}

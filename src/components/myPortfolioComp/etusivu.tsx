@@ -1,10 +1,9 @@
 import React from 'react'
 import styles from './etusivu.module.scss'
-import img from "./20211027_153242.jpg"
-import santa from "./santasnow.jpg"
-import web from "./web.png"
-import wolfgame from "./wolfgame.jpg"
-
+import img from "../media/20211027_153242.jpg"
+import santa from "../media/santasnow.jpg"
+import web from "../media/web.png"
+import wolfgame from "../media/wolfgame.jpg"
 
 type EtusivuProps = {
 

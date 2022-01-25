@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from "./cv.module.scss";
-import me from "./20211027_153242.jpg"
+import me from "../media/20211027_153242.jpg"
+
+
 
 
 type CvProps = {
@@ -22,8 +24,10 @@ const Cv: React.FC<CvProps> = () => {
 
           <div className={styles.segundaColumna}>
               <div className={styles.columnaIzq}>
+                  <hr></hr> 
                   <h1>·Personal summary:</h1>
                   <p>I'm studying programming at Varia's school. I am specializing in web and application development.</p>
+                  <hr></hr>
                   <h1>·Contact information:</h1>
                   <div className={styles.info}>
                       <ul>
@@ -34,7 +38,8 @@ const Cv: React.FC<CvProps> = () => {
                       <li>Email: mehdicontacto@gmail.com</li>
                       </ul>
                   </div>
-                  <h1>·Languages</h1>
+                  <hr></hr>
+                  <h1>·Languages:</h1>
                   <div className={styles.kielet}>
                       <ol>
                       <li> Spanish: Native.</li>
@@ -42,10 +47,36 @@ const Cv: React.FC<CvProps> = () => {
                       <li> Arabic: Excellent.</li>
                       <li> Finnish: Good.</li>
                       </ol>
+                  </div> 
+                  <hr></hr>
+                  <h1>·Skills:</h1>
+                  <div className={styles.kielet}>
+                      <ol>
+                      <li> Language1: Level.</li>
+                      <li> Language2: Level.</li>
+                      <li> Language3: Level.</li>
+                      <li> Language4: Level.</li>
+                      </ol>
                   </div>       
               </div>
               <div className={styles.columnaDerecha}>
-                  <h1>Work Experience</h1>
+              <hr></hr>
+                  <h1>·Work Experience:</h1>
+                  <h2>Insert job name</h2>
+                  <p>-Place (Country) 00/2000 - 00/0000</p>
+                  <h2>Insert job name</h2>
+                  <p>-Place (Country) 00/2000 - 00/2000</p>
+                  <div className={styles.education}>
+                  <hr></hr>
+                  <h1>·Education:</h1>
+                  <h2>Peruskoulu</h2>
+                  <p>-IES Mercedes Labrador (Malaga, Espanja) [2013 - 2017] </p>
+                  <h2>Lukio</h2>
+                  <p>-IES Ben Gabirol (Malaga, Espanja) [2017 - 2018]</p>
+                  <h2>Tieto ja viestinta tekniikka</h2>
+                  <p>-Vantaan ammattiopisto varia (Vantaa, Suomi) [2020 - 2023]</p>
+                  </div>
+                  
 
               </div>
           </div>
