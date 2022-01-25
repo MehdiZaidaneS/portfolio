@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./cv.module.scss";
-import me from "../media/20211027_153242.jpg"
+import me from "./media/20211027_153242.jpg"
 
 
 

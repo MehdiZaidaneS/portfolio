@@ -1,12 +1,12 @@
 import React from 'react'
 import Projects from './projects';
 import styles from "./projektisivu.module.scss";
-import santa from "../media/santasnow.jpg"
-import web from "../media/web.png"
-import wolfgame from "../media/wolfgame.jpg"
-import java from "../media/java.png"
-import techweb from "../media/techweb.jpg"
-import dodgeball from "../media/dodgeball.png"
+import santa from "./media/santasnow.jpg"
+import web from "./media/web.png"
+import wolfgame from "./media/wolfgame.jpg"
+import java from "./media/java.png"
+import techweb from "./media/techweb.jpg"
+import dodgeball from "./media/dodgeball.png"
 
 type ProjektisivuProps = {
    title:string
