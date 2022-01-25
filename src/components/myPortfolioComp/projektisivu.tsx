@@ -7,16 +7,26 @@ import wolfgame from "./media/wolfgame.jpg"
 import java from "./media/java.png"
 import techweb from "./media/techweb.jpg"
 import dodgeball from "./media/dodgeball.png"
+import ShowProject from "./ShowProject"
 
 type ProjektisivuProps = {
    title:string
    description:string
    año:number
    language: string
+   url: string
 }
 
 const Projektisivu: React.FC<ProjektisivuProps> = () => {
-     
+    
+    const showProject={
+      title: "",
+      description: "",
+      año: 0,
+      language: "",
+      url: santa
+    }
+    
     const project1={
         title: "SantaSnow",
         description: "Game",
@@ -56,14 +66,35 @@ const Projektisivu: React.FC<ProjektisivuProps> = () => {
 
   return (
     <div>
+      <div className={styles.show}>
+          <ShowProject title={showProject.title} year={showProject.año} url={showProject.url} />
+         </div>
        <div className={styles.nProjects}>
-       <Projects urls={santa} description={project1.description} title={project1.title} year={project1.año} language={project1.language}></Projects>
-       <Projects urls={web} description={project2.description} title={project2.title} year={project2.año}language={project2.language} ></Projects>
-       <Projects urls={wolfgame} description={project3.description} title={project3.title} year={project3.año} language={project3.language}></Projects>
+         <div>
+         <Projects urls={santa} description={project1.description} title={project1.title} year={project1.año} language={project1.language}></Projects>
+         </div>
+         <div>
+         <Projects urls={web} description={project2.description} title={project2.title} year={project2.año}language={project2.language} ></Projects> 
+         </div>
+         <div>
+         <Projects urls={wolfgame} description={project3.description} title={project3.title} year={project3.año} language={project3.language}></Projects>
+         </div>
+         <div>
+         <Projects urls={java} description={project4.description} title={project4.title} year={project4.año} language={project4.language}></Projects>
+         </div>
+         <div>
+         <Projects urls={techweb} description={project5.description} title={project5.title} year={project5.año} language={project5.language}></Projects>
+         </div>
+         <div>
+         <Projects urls={dodgeball} description={project7.description} title={project7.title} year={project7.año} language={project7.language}></Projects>
+         </div>
+       
+       
+       
       
-       <Projects urls={java} description={project4.description} title={project4.title} year={project4.año} language={project4.language}></Projects>
-       <Projects urls={techweb} description={project5.description} title={project5.title} year={project5.año} language={project5.language}></Projects>
-       <Projects urls={dodgeball} description={project7.description} title={project7.title} year={project7.año} language={project7.language}></Projects>
+       
+       
+       
        </div>
     </div>
   )

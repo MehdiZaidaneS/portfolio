@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from "./projects.module.scss";
 
 type ProjectsProps = {
@@ -11,7 +11,6 @@ type ProjectsProps = {
 
 const Projects: React.FC<ProjectsProps> = (props) => {
   
-  const [visible, setVisible] = useState(false);
 
   return (
     <div className={styles.project}>
@@ -24,20 +23,8 @@ const Projects: React.FC<ProjectsProps> = (props) => {
       <div>
           <img src={props.urls} alt='' width={300} height={200}></img>
       </div>
-      { visible &&
-      <div className={styles.cosas}>
-         <p>Type: {props.description}</p>
-         <p>Year: {props.year}</p>
-         <p>Language: {props.language}</p>
-      </div>
-      }
-      </div>
-
-      <div>
-        <button onClick={() => setVisible(!visible)}>{visible ? ' Hide Description' : 'Show Description'}</button>
-      </div>
       
-     
+      </div>
     </div>
   )
 }
