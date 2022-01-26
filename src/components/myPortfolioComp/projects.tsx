@@ -2,11 +2,8 @@ import React from 'react'
 import styles from "./projects.module.scss";
 
 type ProjectsProps = {
-     description:string
      title:string
-     year: number
      urls:string
-     language: string
 }
 
 const Projects: React.FC<ProjectsProps> = (props) => {

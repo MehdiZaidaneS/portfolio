@@ -8,6 +8,7 @@ import java from "./media/java.png"
 import techweb from "./media/techweb.jpg"
 import dodgeball from "./media/dodgeball.png"
 import ShowProject from "./ShowProject"
+import { useState } from 'react';
 
 type ProjektisivuProps = {
    title:string
@@ -15,87 +16,102 @@ type ProjektisivuProps = {
    año:number
    language: string
    url: string
+
 }
 
 const Projektisivu: React.FC<ProjektisivuProps> = () => {
-    
-    const showProject={
-      title: "",
-      description: "",
-      año: 0,
-      language: "",
-      url: santa
-    }
-    
-    const project1={
+
+    const [visible, setVisible] = useState(false)
+  
+    const proyectos= [
+      {
+        title: "a",
+        description: "",
+        año: 0,
+        language: "",
+        url: santa
+      },
+      {
         title: "SantaSnow",
         description: "Game",
         año: 2022,
-        language: "C#"
-    }
-    const project2={
-      title: "Supervivientes",
-      description: "Web page",
-      año: 2020,
-      language: "HTML & CSS"
-    }
-    const project3={
-      title: "Wolf Adventure",
-      description: "Game",
-      año: 2021,
-      language: "C#"
-    }
-    const project4={
-      title: "RPG Game",
-      description: "Game",
-      año: 2020,
-      language: "Java"
-    }
-    const project5={
-      title: "Tech Page",
-      description: "Web Page",
-      año: 2021,
-      language: "HTML & CSS"
-    }
-    const project7={
-      title: "Dodge the Ball",
-      description: "Game",
-      año: 2021,
-      language: "C#"
-    }
+        language: "C#",
+        url: santa
+      },
+      {
+        title: "Supervivientes",
+        description: "Web page",
+        año: 2020,
+        language: "HTML & CSS",
+        url: web
+      },
+      {
+        title: "Wolf Adventure",
+        description: "Game",
+        año: 2021,
+        language: "C#",
+        url: wolfgame
+      },
+      {
+        title: "RPG Game",
+        description: "Game",
+        año: 2020,
+        language: "Java",
+        url: java
+      },
+      {
+        title: "Tech Page",
+        description: "Web Page",
+        año: 2021,
+        language: "HTML & CSS",
+        url:techweb
+      },
+      {
+        title: "Dodge the Ball",
+        description: "Game",
+        año: 2021,
+        language: "C#",
+        url: dodgeball
+      }
+    ];  
 
   return (
     <div>
-      <div className={styles.show}>
-          <ShowProject title={showProject.title} year={showProject.año} url={showProject.url} />
-         </div>
+
+      { visible &&
+       <div className={styles.show}>
+          <ShowProject title={proyectos[0].title} year={proyectos[0].año} url={proyectos[0].url} />
+          <button onClick={ () => setVisible(false)}>Hide Description</button>
+       </div>
+      }
+      { visible === false &&
        <div className={styles.nProjects}>
          <div>
-         <Projects urls={santa} description={project1.description} title={project1.title} year={project1.año} language={project1.language}></Projects>
+         <Projects urls={santa} title={proyectos[1].title}></Projects>
+         <button onClick={() => setVisible(true)}>See more</button>
          </div>
          <div>
-         <Projects urls={web} description={project2.description} title={project2.title} year={project2.año}language={project2.language} ></Projects> 
+         <Projects urls={web} title={proyectos[2].title} ></Projects>
+         <button onClick={() => setVisible(true)}>See more</button>
          </div>
          <div>
-         <Projects urls={wolfgame} description={project3.description} title={project3.title} year={project3.año} language={project3.language}></Projects>
+         <Projects urls={wolfgame} title={proyectos[3].title}></Projects>
+         <button onClick={() => setVisible(true)}>See more</button>
          </div>
          <div>
-         <Projects urls={java} description={project4.description} title={project4.title} year={project4.año} language={project4.language}></Projects>
+         <Projects urls={java} title={proyectos[4].title}></Projects>
+         <button onClick={() => setVisible(true)}>See more</button>
          </div>
          <div>
-         <Projects urls={techweb} description={project5.description} title={project5.title} year={project5.año} language={project5.language}></Projects>
+         <Projects urls={techweb} title={proyectos[5].title}></Projects>
+         <button onClick={() => setVisible(true)}>See more</button>
          </div>
          <div>
-         <Projects urls={dodgeball} description={project7.description} title={project7.title} year={project7.año} language={project7.language}></Projects>
+         <Projects urls={dodgeball} title={proyectos[6].title}></Projects>
+         <button onClick={() => setVisible(true)}>See more</button>
          </div>
-       
-       
-       
-      
-       
-       
-       
        </div>
+      }
     </div>
   )
 }
