@@ -77,7 +77,6 @@ const Projektisivu: React.FC<ProjektisivuProps> = () => {
 
   return (
     <div>
-
       { visible &&
        <div className={styles.show}>
           <ShowProject title={proyectos[0].title} year={proyectos[0].año} url={proyectos[0].url} />

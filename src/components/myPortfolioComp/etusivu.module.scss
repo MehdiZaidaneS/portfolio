@@ -8,10 +8,6 @@
     margin-top: 25px;
 }
 
-.firstColumn button{
-    margin-top: 10px;
-    margin-left: 305px;
-}
 
 .firstColumn p{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -67,10 +63,26 @@ button:hover{
     cursor: pointer;
 }
 
+.proyectos2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    padding-top: 10px;
+}
 
+.boton{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: white 1px solid;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 305px;
+}
 
-.proyectos img:hover{
-    opacity: 100%;
-    border: rgb(255, 255, 255) solid 1px;
+.boton:hover{
+    background-color: black;
+    color: white;
     cursor: pointer;
 }
