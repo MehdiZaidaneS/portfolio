@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.2edd7422.css",
-    "main.js": "./static/js/main.3e4e0c67.js",
+    "main.css": "./static/css/main.ffb21964.css",
+    "main.js": "./static/js/main.d7baae40.js",
     "static/js/787.86e70ff7.chunk.js": "./static/js/787.86e70ff7.chunk.js",
     "static/media/dodgeball.png": "./static/media/dodgeball.0ce354378e2ca79d7b0a.png",
     "static/media/web.png": "./static/media/web.197d125223d538b3a6f1.png",
@@ -12,12 +12,12 @@
     "static/media/santasnow.jpg": "./static/media/santasnow.8e41f5856029e32b4535.jpg",
     "static/media/java.png": "./static/media/java.c868ef295cc32c6b540d.png",
     "index.html": "./index.html",
-    "main.2edd7422.css.map": "./static/css/main.2edd7422.css.map",
-    "main.3e4e0c67.js.map": "./static/js/main.3e4e0c67.js.map",
+    "main.ffb21964.css.map": "./static/css/main.ffb21964.css.map",
+    "main.d7baae40.js.map": "./static/js/main.d7baae40.js.map",
     "787.86e70ff7.chunk.js.map": "./static/js/787.86e70ff7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2edd7422.css",
-    "static/js/main.3e4e0c67.js"
+    "static/css/main.ffb21964.css",
+    "static/js/main.d7baae40.js"
   ]
 }
