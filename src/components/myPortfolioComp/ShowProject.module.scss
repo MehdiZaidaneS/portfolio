@@ -1,9 +1,8 @@
 .contenedor{
+    display: flex;
+    flex-direction: inline;
     margin-top: 15px;
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
     color: white;
     background: url(pexels-evie-shaffer-4004374.jpg) no-repeat center center/cover;
     border: white 1px solid;
@@ -12,4 +11,10 @@
 
 .contenedor:last-child{
     padding-bottom: 25px;
+}
+
+.info{
+   display: inline-block;
+   background-color: blue;
+   width: 50%;
 }

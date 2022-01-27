@@ -1,12 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './etusivu.module.scss'
 import img from "./media/20211027_153242.jpg"
 import santa from "./media/santasnow.jpg"
 import web from "./media/web.png"
 import wolfgame from "./media/wolfgame.jpg"
-import java from "./media/java.png"
-import techweb from "./media/techweb.jpg"
-import dodgeball from "./media/dodgeball.png"
 import Cv from "./cv"
 import {
   BrowserRouter as Router,
@@ -19,9 +16,6 @@ type EtusivuProps = {
 }
 
 const Etusivu: React.FC<EtusivuProps> = () => {
-
-   const [visible, setVisible] = useState(false);
-
 
   return (
     <div>
@@ -55,22 +49,9 @@ const Etusivu: React.FC<EtusivuProps> = () => {
            <img src={wolfgame} alt='' width={300}height={200}></img>
          </div> 
     </div>
-    { visible &&
-    <div className={styles.proyectos2}>
-         <div className={styles.fourthImg}>
-           <img src={java} alt='' width={300}height={200}></img>
-         </div>
-         <div className={styles.fifthImg}>
-           <img src={techweb} alt='' width={300}height={200}></img>
-         </div>
-         <div className={styles.sixImg}>
-           <img src={dodgeball} alt='' width={300}height={200}></img>
-         </div> 
-    </div>
-    }
     
     <div className={styles.imgbutton}>
-      <button onClick={ () => setVisible(!visible)}>{visible ? "Hide" : "See more"}</button>
+      <button>See more</button>
     </div>
     
     </div>
