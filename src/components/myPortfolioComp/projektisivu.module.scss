@@ -3,14 +3,10 @@
     grid-template-columns: repeat(3,1fr);  
 }
 
-.show div{
-   align-items: center;
-}
-
-.show button{
-    margin-top: 10px;
-}
-
 .nProjects div{
     text-align:center;
+}
+
+.show div{
+    text-align: center;
 }

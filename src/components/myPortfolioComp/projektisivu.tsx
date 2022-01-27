@@ -74,10 +74,10 @@ const Projektisivu: React.FC<ProjektisivuProps> = () => {
 
   return currentItem ?  ( 
     <div className={styles.show}>
-      <div>
-        <ShowProject title={currentItem.title} year={currentItem.año} url={currentItem.url} />
+        <ShowProject title={currentItem.title} year={currentItem.año} url={currentItem.url} language={currentItem.language} description={currentItem.description} />
+        <div>
         <button onClick={ () => setItem(null)}>Hide Description</button>
-     </div>
+        </div>
   </div>
 ) :
 (
