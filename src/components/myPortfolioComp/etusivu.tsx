@@ -36,6 +36,7 @@ const Etusivu: React.FC<EtusivuProps> = () => {
     </div>
     
     <div className={styles.titulo}>
+      <hr className={styles.hache}></hr>
       <h3>Recent projects</h3>
     </div>
     <div className={styles.proyectos}>
