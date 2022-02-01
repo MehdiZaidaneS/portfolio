@@ -6,7 +6,7 @@ body {
 
 .navbar{
     width: 100%;
-    background-color: rgba(68, 63, 63, 0.527);
+    background-color: rgba(80, 77, 77, 0.527);
     border: solid rgba(255, 255, 255, 0.178) 1px;
     height: 100%;
 }
@@ -14,17 +14,23 @@ body {
 .navbar a{
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-top: 10px;
     font-size: 20px;
     text-decoration: none;
     display: block;
     color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.493);
+    background-color: rgba(34, 33, 33, 0.767);
+    border: 1px solid rgba(255, 255, 255, 0.13);
 }
 
-.navbar a:first-child{
-    margin-top:20px;
+
+.navbar h1{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    padding-bottom:15px ;
 }
+
+
 
 .navbar a:hover{
     background-color: white;
@@ -37,20 +43,46 @@ body {
     flex-direction: inline;
 }
 
+.socialMediaa{
+    justify-content: center;
+    margin-top: 300px;
+    background-color: rgba(0, 0, 0, 0.692);
+    
+}
+
+.socialMediaa a{
+   
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    background: none;
+    font-style: italic;
+    border: none;
+}
+
 .barra{
     display: flex;
     flex-direction: inline;
     position: absolute;
     top: 0;
-    width: 28%;
+    width: 31%;
     height: 100%;
 }
 
 .abrir button{
-    background-color: rgba(68, 63, 63, 0.527);
+    background-color: rgba(80, 77, 77, 0.527);
     height:7%;
-    border: none;
+    border: solid rgba(255, 255, 255, 0.233) 1px;
     font-size: 12px;
     width: fit-content;
+}
+
+
+.barra2{
+    display: flex;
+    flex-direction: inline;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    height: 100%;
 }
 
