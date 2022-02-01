@@ -17,7 +17,9 @@
 .secondColumn img{
     margin-left: 120px;
     margin-bottom: 20px;
-    border-radius:100%;
+    background-color: rgba(44, 43, 43, 0.521);
+    padding: 5px;
+    border: solid 1px rgba(255, 255, 255, 0.027);
 }
 
 .firstColumn h1{
@@ -50,9 +52,9 @@
 
 button{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(44, 43, 43, 0.521);
     color: white;
-    border: white 1px solid;
+    border: rgba(255, 255, 255, 0.144) 1px solid;
     font-size: 18px;
 }
 
@@ -65,13 +67,14 @@ button:hover{
 
 .boton{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(44, 43, 43, 0.521);
     color: white;
-    border: white 1px solid;
-    font-size: 20px;
+    border: rgba(255, 255, 255, 0.144) 1px solid;
+    font-size: 17px;
     text-decoration: none;
     margin-top: 10px;
-    margin-left: 305px;
+    margin-left: 320px;
+    padding: 4px;
 }
 
 .boton:hover{
@@ -81,5 +84,22 @@ button:hover{
 }
 
 .hache{
-   border: rgba(88, 85, 85, 0.521) 1.5px solid;
+   border: rgba(88, 85, 85, 0.521) 1px solid;
+}
+
+.boton2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(44, 43, 43, 0.521);
+    color: white;
+    border: rgba(255, 255, 255, 0.144) 1px solid;
+    font-size: 17px;
+    text-decoration: none;
+    margin-top: 10px;
+    padding: 4px;
+}
+
+.boton2:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }

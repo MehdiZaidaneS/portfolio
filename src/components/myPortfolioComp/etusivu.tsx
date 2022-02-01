@@ -5,6 +5,7 @@ import santa from "./media/santasnow.jpg"
 import web from "./media/web.png"
 import wolfgame from "./media/wolfgame.jpg"
 import Cv from "./cv"
+import Projektisivu from './projektisivu'
 import {
   BrowserRouter as Router,
   Route,
@@ -21,6 +22,7 @@ const Etusivu: React.FC<EtusivuProps> = () => {
     <div>
     <Router>
       <Route exact path="/cv" component={Cv} />
+      <Route exact path='/projects' component={Projektisivu}/>
     </Router>
     <div className= {styles.columns}>
       <div className={styles.firstColumn}>
@@ -52,7 +54,7 @@ const Etusivu: React.FC<EtusivuProps> = () => {
     </div>
     
     <div className={styles.imgbutton}>
-      <button>See more</button>
+    <Link to="projects" className={styles.boton2}>Learn More</Link>
     </div>
     
     </div>
