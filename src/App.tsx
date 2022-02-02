@@ -28,10 +28,11 @@ const App: React.FC = () => {
         {
          visible === true &&
         <div className={styles.navbar}>
-        <h1>Menu</h1>
+        <h1>-Menu-</h1>
         <Link to='/'>-Home</Link>
         <Link to='projects'>-Projects</Link>
         <Link to= 'cv'>-CV</Link>
+        <a href='https://github.com/MehdiZaidaneS' target={'_blank'} rel='noreferrer'>-GitHub</a>
         <div className={styles.socialMediaa}>
           <div className={styles.twitter}>
             <a href="https://twitter.com/BarackObama" target={'_blank'} rel='noreferrer' >
