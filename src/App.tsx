@@ -13,6 +13,7 @@ import Footer from './components/myPortfolioComp/footer';
 import Projektisivu from './components/myPortfolioComp/projektisivu';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import img from "./20211027_153242.jpg"
 
 const App: React.FC = () => {
 
@@ -28,35 +29,39 @@ const App: React.FC = () => {
         {
          visible === true &&
         <div className={styles.navbar}>
-        <h1>-Menu-</h1>
-        <Link to='/'>-Home</Link>
-        <Link to='projects'>-Projects</Link>
-        <Link to= 'cv'>-CV</Link>
-        <a href='https://github.com/MehdiZaidaneS' target={'_blank'} rel='noreferrer'>-GitHub</a>
-        <div className={styles.socialMediaa}>
-          <div className={styles.twitter}>
-            <a href="https://twitter.com/BarackObama" target={'_blank'} rel='noreferrer' >
-            <FontAwesomeIcon icon={faTwitter} size="1x" />
-            </a>
+          <div className={styles.fotos}>
+            <img src={img} alt='' width={59}height={59}></img>
+            <div className={styles.nombres}>
+              <h2>Mehdi Zaidane</h2>
+              <h3>Web developer</h3>
+            </div>
+          </div>  
+          <Link to='/'>-Home</Link>
+          <Link to='projects'>-Projects</Link>
+          <Link to= 'cv'>-CV</Link>
+          <a href='https://github.com/MehdiZaidaneS' target={'_blank'} rel='noreferrer'>-GitHub</a>
+          <div className={styles.socialMediaa}>
+            <div className={styles.twitter}>
+              <a href="https://twitter.com/BarackObama" target={'_blank'} rel='noreferrer' >
+              <FontAwesomeIcon icon={faTwitter} size="1x" />
+              </a>
+            </div>
+            <div className={styles.instagram}>
+              <a href="https://www.instagram.com/mehdi_zdn5" target={'_blank'} rel='noreferrer'>
+              <FontAwesomeIcon icon={faInstagram} size="1x" />
+              </a>
+            </div>
+            <div className={styles.facebook}>
+              <a href="https://www.facebook.com/mehdi.zaidane.56/" target={'_blank'} rel='noreferrer'>
+              <FontAwesomeIcon icon={faFacebook} size="1x" />
+              </a>
+            </div>
           </div>
-          <div className={styles.instagram}>
-            <a href="https://www.instagram.com/mehdi_zdn5" target={'_blank'} rel='noreferrer'>
-            <FontAwesomeIcon icon={faInstagram} size="1x" />
-            </a>
-          </div>
-          <div className={styles.facebook}>
-            <a href="https://www.facebook.com/mehdi.zaidane.56/" target={'_blank'} rel='noreferrer'>
-            <FontAwesomeIcon icon={faFacebook} size="1x" />
-            </a>
-          </div>
-          
-      </div>
         </div>
         }
         <div className={styles.abrir}>
           <button onClick={() => setVisible(!visible)}>{visible === true ? "<<": ">>"}</button>
-        </div>
-        
+        </div> 
       </div>
       <Switch>
         {/* Changing content comes here */}

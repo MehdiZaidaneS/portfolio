@@ -1,16 +1,34 @@
 .contenedor{
- background-color: blue;  
- align-items: center;
- width: fit-content;
+ background-color: rgb(65, 64, 64); 
+ width:70%;
  color: white;
  display: flex;
+ justify-content: center;
  flex-direction: inline;
  margin: auto;
- background: url(pexels-evie-shaffer-4004374.jpg) no-repeat center center/cover;
  border: solid 1px white;
 }
 
+.info p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
 
+.info h1 {
+    font-size: 40px;
+    color: rgb(163, 163, 163);
+}
+
+
+.picture{
+    margin: 10px;
+    border: 2.5px solid rgba(255, 255, 255, 0.116);
+    width: fit-content;
+}
+
+.info {
+    width: fit-content;
+}
 
 
 

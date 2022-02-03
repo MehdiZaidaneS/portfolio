@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './etusivu.module.scss'
 import img from "./media/20211027_153242.jpg"
 import santa from "./media/santasnow.jpg"
-import web from "./media/web.png"
+import techweb from "./media/techweb.jpg"
 import wolfgame from "./media/wolfgame.jpg"
 import Cv from "./cv"
 import Projektisivu from './projektisivu'
@@ -43,13 +43,13 @@ const Etusivu: React.FC<EtusivuProps> = () => {
     </div>
     <div className={styles.proyectos}>
          <div className={styles.firstImg}>
-           <img src={santa} alt='' width={300}height={200}></img>
+           <img src={santa} alt='' width={350}height={210}></img>
          </div>
          <div className={styles.secondImg}>
-           <img src={web} alt='' width={300}height={200}></img>
+           <img src={techweb} alt='' width={350}height={210}></img>
          </div>
          <div className={styles.thirdImg}>
-           <img src={wolfgame} alt='' width={300}height={200}></img>
+           <img src={wolfgame} alt='' width={350}height={210}></img>
          </div> 
     </div>
     

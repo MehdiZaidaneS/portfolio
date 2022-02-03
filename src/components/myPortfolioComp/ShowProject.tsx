@@ -15,13 +15,10 @@ const ShowProject: React.FC<ShowProjectProps> = ({title, url, year, language, de
     <div className={styles.contenedor}>
 
       <div className={styles.picture}>
-        <img src={url} alt='' width={300} height={200}></img>
+        <img src={url} alt='' width={400} height={250}></img>
       </div>
       <div className={styles.info}>
-        <h2>-Title: {title}</h2>
-        <h2>-Year: {year}</h2>
-        <h2>-Language: {language}</h2>
-        <h2>-Description: </h2>
+        <h1>{title}</h1>
         <p>{description}</p>
       </div>
       

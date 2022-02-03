@@ -18,7 +18,7 @@ const Projects: React.FC<ProjectsProps> = (props) => {
 
       <div className={styles.pack}>
       <div>
-          <img src={props.urls} alt='' width={300} height={200}></img>
+          <img src={props.urls} alt='' width={350} height={210}></img>
       </div>
       
       </div>
