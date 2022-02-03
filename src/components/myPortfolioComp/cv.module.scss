@@ -16,16 +16,15 @@
     font-size: 25px;
 }
 
+
 .name{
     margin-top: 200px;
-    padding-left: 300px;
+    padding-left: 70px;
 }
 
 .primeraColumna img {
     margin-top: 30px;
-    padding-top: 30px;
-    padding-right: 599px;
-    position: absolute;
+    margin-right: 10px;
 }
 
 .segundaColumna h1 {
@@ -37,7 +36,7 @@
 }
 
 .columnaIzq {
-    padding-top: 80px;
+    padding-top: 20px;
     width:20%;
     padding-left: 270px;
 }
@@ -97,4 +96,18 @@ li{
 .columnaDerecha hr{
     width: 95%;
     margin-left: 40px;
+}
+
+
+
+.download a{
+   
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+}
+
+.download a:hover{
+    text-decoration: underline white;
+    color: rgb(255, 255, 255);
 }

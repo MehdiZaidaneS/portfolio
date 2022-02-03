@@ -23,6 +23,7 @@ const Projektisivu: React.FC<ProjektisivuProps> = () => {
 
 
     const [currentItem, setItem] = useState<ProjektisivuProps|null>(null);
+    
   
     const proyectos: ProjektisivuProps[]= [
       {
@@ -72,16 +73,19 @@ const Projektisivu: React.FC<ProjektisivuProps> = () => {
 
 
 
-  return currentItem ?  ( 
-    <div className={styles.show}>
+  return(
+  <div>
+    { currentItem && 
+  <div className={styles.show}>
         <ShowProject title={currentItem.title} year={currentItem.año} url={currentItem.url} language={currentItem.language} description={currentItem.description} />
-        <div>
+        <div className={styles.showButton}>
         <button onClick={ () => setItem(null)}>Hide Description</button>
         </div>
+        <hr></hr>
   </div>
-) :
-(
-  <div>
+  }
+
+  
       <div className={styles.nProjects}>
         {
           proyectos.map(x => {
@@ -95,7 +99,7 @@ const Projektisivu: React.FC<ProjektisivuProps> = () => {
         }
      </div>
    </div>
-)
+  )
 }
 
 export default Projektisivu
