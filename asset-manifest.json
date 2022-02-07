@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.852ac04c.css",
+    "main.css": "./static/css/main.6f0caf6c.css",
     "main.js": "./static/js/main.41e60d9f.js",
     "static/js/787.86e70ff7.chunk.js": "./static/js/787.86e70ff7.chunk.js",
     "static/media/techweb.jpg": "./static/media/techweb.9972b2c98182ff3290fc.jpg",
@@ -13,12 +13,12 @@
     "static/media/Mehdi Zaidane CV 2.pdf": "./static/media/Mehdi Zaidane CV 2.f8715b316b1da5cbd2b1.pdf",
     "static/media/java.png": "./static/media/java.c868ef295cc32c6b540d.png",
     "index.html": "./index.html",
-    "main.852ac04c.css.map": "./static/css/main.852ac04c.css.map",
+    "main.6f0caf6c.css.map": "./static/css/main.6f0caf6c.css.map",
     "main.41e60d9f.js.map": "./static/js/main.41e60d9f.js.map",
     "787.86e70ff7.chunk.js.map": "./static/js/787.86e70ff7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.852ac04c.css",
+    "static/css/main.6f0caf6c.css",
     "static/js/main.41e60d9f.js"
   ]
 }
