@@ -26,3 +26,16 @@
 .show hr{
     border: rgba(88, 85, 85, 0.521) 1px solid;
 }
+
+
+
+@media screen and (max-width: 800px) {
+    .nProjects{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);  
+    }
+
+    .show{
+        width: fit-content;
+    }
+}

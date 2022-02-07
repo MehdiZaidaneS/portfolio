@@ -111,3 +111,38 @@ button:hover{
 .proyectos img{
     border: solid 2px rgba(255, 255, 255, 0.212);
 }
+
+
+@media screen and (max-width: 800px) {
+    .proyectos{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+        overflow: hidden;
+    }
+    
+
+    .proyectos div{
+        margin-top: 10px;
+    }
+
+
+    .columns{
+        width: fit-content;
+        
+    }
+
+    .firstColumn{
+        padding-right: 0px;
+    }
+
+
+    .firstColumn h1 {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .firstColumn p {
+        font-size: 15px;
+    }
+}

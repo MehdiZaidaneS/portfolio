@@ -27,6 +27,8 @@
     margin-right: 10px;
 }
 
+
+
 .segundaColumna h1 {
     margin: 0 0 0 0;
 }
@@ -96,7 +98,7 @@ li{
 }
 
 .columnaDerecha hr{
-    width: 90%;
+   
     margin-left: 40px;
 }
 
@@ -112,4 +114,74 @@ li{
 .download a:hover{
     text-decoration: underline white;
     color: rgb(255, 255, 255);
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    .primeraColumna{
+        text-align: center;
+        display: block;
+        
+    }
+    .primeraColumna h1{
+        font-size: 50px;
+    }
+    
+    .primeraColumna h3{
+        font-size: 20px;
+    }
+
+    .primeraColumna img {
+        margin-top: 30px;
+        width: 120px;
+        height: 190px;
+    }
+
+    .name{
+        padding-left: 0px;
+        margin-top: 0;
+    }
+
+
+    .columnaIzq {
+        margin-left: 0px;
+        width: fit-content;
+    }
+
+    .columnaDerecha{
+        padding-top: 0px;
+        padding:auto;
+        justify-content: center;
+    }
+
+    .columnaDerecha hr{
+        margin: 0 auto;
+        width: auto;
+    }
+     
+    .columnaDerecha h1 {
+        margin-left: 0px; 
+        margin-top: 10px;
+        
+     }
+    .segundaColumna{
+        display: block;
+        text-align: center;
+    }
+
+    .columnaDerecha p{
+        margin-left: 0px;
+    }
+
+    .columnaDerecha h2{
+        margin-left: 0px;
+    }
+
+    
+    
+
+    
 }
