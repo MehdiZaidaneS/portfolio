@@ -7,7 +7,10 @@
  flex-direction: inline;
  margin: auto;
  border: solid 1px white;
+ text-align: center;
 }
+
+
 
 .info p{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -23,10 +26,6 @@
 .picture{
     margin: 10px;
     border: 2.5px solid rgba(255, 255, 255, 0.116);
-    width: fit-content;
-}
-
-.info {
     width: fit-content;
 }
 

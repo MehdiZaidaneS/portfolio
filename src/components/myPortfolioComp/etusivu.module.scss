@@ -5,8 +5,14 @@
     padding-top: 20px;
     color: white;
     margin-top: 25px;
+    text-align: center;
+    justify-content: center;
 }
 
+
+.firstColumn{
+    padding-right: 100px;
+}
 
 .firstColumn p{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -15,7 +21,6 @@
 }
 
 .secondColumn img{
-    margin-left: 120px;
     margin-bottom: 20px;
     background-color: rgba(44, 43, 43, 0.521);
     padding: 5px;
@@ -24,13 +29,8 @@
 }
 
 .firstColumn h1{
-    padding-top: 10px;
-    padding-left: 250px;
     font-size: 40px;
-}
-
-.firstColumn{
-    padding-left: 70px;
+    text-align: center;
 }
 
 
@@ -76,8 +76,8 @@ button:hover{
     font-size: 17px;
     text-decoration: none;
     margin-top: 10px;
-    margin-left: 320px;
     padding: 4px;
+    text-align: center;
 }
 
 .boton:hover{
