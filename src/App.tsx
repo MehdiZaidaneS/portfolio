@@ -1,82 +1,47 @@
 // App.tsx
-import React, { useState } from 'react'
+import React from 'react'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from 'react-router-dom';
-import Cv from './components/myPortfolioComp/cv';
-import Etusivu from './components/myPortfolioComp/etusivu';
+import Cv from './components/myPortfolioComp/CV/cv';
+import Etusivu from './components/myPortfolioComp/Etusivu/etusivu';
 import styles from './App.module.scss';
-import Footer from './components/myPortfolioComp/footer';
-import Projektisivu from './components/myPortfolioComp/projektisivu';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import img from "./20211027_153242.jpg"
+import Footer from './components/myPortfolioComp/Footer/footer';
+import Projektisivu from './components/myPortfolioComp/ProjektiSivu/projektisivu';
+import SocialMedia from './components/myPortfolioComp/SidebarComp/SocialMedia';
+import Me from './components/myPortfolioComp/SidebarComp/Me';
 
 const App: React.FC = () => {
 
-   const [visible, setVisible] = useState(true);
-
   return (
     <Router basename='/portfolio'>
-      
-      {/* The navigation bar and other components you want to display on all pages come here */}
-      
 
-      <div className={visible === true ? styles.barra : styles.barra2}>
-        {
-         visible === true &&
-        <div className={styles.navbar}>
-          <div className={styles.fotos}>
-            <img src={img} alt='' width={59}height={59}></img>
-            <div className={styles.nombres}>
-              <h2>Mehdi Zaidane</h2>
-              <h3>Web developer</h3>
-            </div>
-          </div>  
-          <Link to='/'>-Home</Link>
-          <Link to='projects'>-Projects</Link>
-          <Link to= 'cv'>-CV</Link>
-          <a href='https://github.com/MehdiZaidaneS' target={'_blank'} rel='noreferrer'>-GitHub</a>
-          <div className={styles.socialMediaa}>
-            <div className={styles.twitter}>
-              <a href="https://twitter.com/BarackObama" target={'_blank'} rel='noreferrer' >
-              <FontAwesomeIcon icon={faTwitter} size="1x" />
-              </a>
-            </div>
-            <div className={styles.instagram}>
-              <a href="https://www.instagram.com/mehdi_zdn5" target={'_blank'} rel='noreferrer'>
-              <FontAwesomeIcon icon={faInstagram} size="1x" />
-              </a>
-            </div>
-            <div className={styles.facebook}>
-              <a href="https://www.facebook.com/mehdi.zaidane.56/" target={'_blank'} rel='noreferrer'>
-              <FontAwesomeIcon icon={faFacebook} size="1x" />
-              </a>
-            </div>
-          </div>
-        </div>
-        }
-        <div className={styles.abrir}>
-          <button onClick={() => setVisible(!visible)}>{visible === true ? "<<": ">>"}</button>
-        </div> 
+    <div className={styles.wrapper}>
+      <div className={styles.content}>
+         <Switch>
+          <Route exact path='/' component={Etusivu} />
+          <Route exact path='/projects' component={Projektisivu}/>
+          <Route exact path= '/cv' component={Cv} />
+        </Switch>
+        <Footer />
       </div>
-      <Switch>
-        {/* Changing content comes here */}
-        <Route exact path='/' component={Etusivu} />
-        <Route exact path='/projects' component={Projektisivu}/>
-        <Route exact path= '/cv' component={Cv} />
-      </Switch>
-  
+    </div>
+    <div className={styles.sidebar}>
+        <Me/>
+        <div className={styles.thea}>
+        <Link to='/'>Home</Link>
+        <Link to='projects'>Projects</Link>
+        <Link to= 'cv'>CV</Link>
+        <a href='https://github.com/MehdiZaidaneS' target={'_blank'} rel='noreferrer'>GitHub</a>
+        </div>
+        <SocialMedia />
+    </div>
+  </Router>
 
-      {/* The footer and other components you want to display on all pages come here */}
-     
-      <Footer />
-      
 
-    </Router>
   )
 }
 

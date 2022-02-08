@@ -5,7 +5,7 @@
     flex-direction: inline;
     line-height: 0;
     justify-content: center;
-    background: url(pexels-evie-shaffer-4004374.jpg) no-repeat center center/cover;
+    background: url(../media/pexels-evie-shaffer-4004374.jpg) no-repeat center center/cover;
 }
 
 .primeraColumna h1{
@@ -180,7 +180,21 @@ li{
         margin-left: 0px;
     }
 
+    .lastp{
+        padding-bottom: 20px;
+    }
+
+
+    .columnaIzq ul{
+        text-align: center;
+    list-style-position: inside;
+    }
     
+    .columnaIzq ol{
+        text-align: center;
+        list-style-position: inside;
+        }
+        
     
 
     

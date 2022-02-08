@@ -1,140 +1,88 @@
 body {
     margin: 0;
-    background: url(pexels-evie-shaffer-4004374.jpg) no-repeat center center/cover;
+    background: url(pexels-evie-shaffer-4004374.jpg);
+    height: 100vh;
 }
 
-
-.navbar{
+.wrapper {
+    float: right;
     width: 100%;
-    background-color: rgba(80, 77, 77, 0.527);
-    border: solid rgba(255, 255, 255, 0.178) 1px;
-    height: 100%;
-}
-
-.navbar a{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 20px;
-    text-decoration: none;
-    display: block;
-    color: rgb(255, 255, 255);
-    background-color: rgba(34, 33, 33, 0.767);
-    border: 1px solid rgba(255, 255, 255, 0.13);
-}
-
-
-.navbar h1{
-    color: rgb(255, 255, 255);
+  }
+  
+  .content {
+    margin-left: 320px;
+    padding-left: 25px;
+    clear: both;
+    overflow: auto;
+    height: 100vh;
+  }
+  
+  .contentHeader {
+    margin-bottom: 15px;
+    border-bottom: solid rgb(153, 153, 153);
+  }
+  
+  .contentHeader h1 {
+      font-size: 60px;
+      font-family: 'Mukta-Extra-Bold';
+      color: #E8E8E8;
+      line-height: 60px;
+      margin: 10px 0;
+      margin-bottom: 0;
+    }
+  
+  .contentHeader h2 {
+      margin: 0px;
+      padding: 0;
+      padding-bottom: 15px;
+      font-size: 25px;
+      color: #d1d1d1;
+    }
+  
+  .sidebar {
     text-align: center;
-    font-style: italic;
-    margin-bottom: 40px;
-    padding: 5px;
-    background-color: rgb(87, 85, 85);
-}
+  
+    position: relative;
+    width: 320px;
+    margin-right: -320px;
+    float: right;
+    overflow: hidden;
+    background: rgb(54,62,73);
+    color: #eee;
+    height: 100vh;
+  
+    -moz-box-shadow:    3px 0 5px 0 #555;
+    -webkit-box-shadow: 3px 0 5px 0 #555;
+    box-shadow:         3px 0 5px 0 #555;
+  }
+   
+  .thea{
+      padding-top: 10px;
+  }
 
+  .thea a{
+      display: block;
+      color: white;
+      text-decoration: none;
+      font-size: 23px;
+      margin-bottom: 10px;
+      padding: 5px;
+      background-color: rgba(0, 0, 0, 0.322);
+  }
 
-
-.navbar a:hover{
+  .thea a:hover{
+    
     background-color: white;
     color: black;
-}
-
-
-.navbar div{
-    display: flex;
-    flex-direction: inline;
-}
-
-.socialMediaa{
-    justify-content: center;
-    margin-top: 280px;
-    background-color: rgba(92, 91, 89, 0.63);
-    border-top: solid 1.5px rgba(255, 255, 255, 0.39);
-    border-bottom: solid 1.5px rgba(255, 255, 255, 0.39);
-    
-}
-
-.socialMediaa a{
-   
-    color: white;
-    padding: 10px;
-    background: none;
-    font-style: italic;
-    border: none;
-}
-
-.barra{
-    display: flex;
-    flex-direction: inline;
-    position: absolute;
-    top: 0;
-    width: 25%;
-    height: 100%;
-}
-
-.abrir button{
-    background-color: rgba(80, 77, 77, 0.527);
-    height:7%;
-    border: solid rgba(255, 255, 255, 0.233) 1px;
-    font-size: 12px;
-    width: fit-content;
-}
-
-
-.barra2{
-    display: flex;
-    flex-direction: inline;
-    position: absolute;
-    top: 0;
-    width: 0%;
-    height: 100%;
-}
-
-.fotos{
-    justify-content: center;
-    padding-left: 20px;
-    padding-top: 7px;
-    margin-bottom: 25px;
-    padding-bottom: 7px;
-    padding-right: 20px;
-    background-color: rgba(85, 85, 84, 0.986);
-    border-bottom: solid 1.5px rgba(255, 255, 255, 0.39);
-}
-
-.fotos img{
-    border-radius: 100%;
-    border: solid rgba(255, 255, 255, 0.384) 2px;
-    margin-right: 10px;
-}
-
-.nombres{
-    display: flex;
-    flex-direction: column;
-    line-height: 0;
-    color:whitesmoke;
-    margin: 0;
-    justify-content: center;
-    
-    padding-bottom: 10px;
-}
-
-.nombres h2{
-    font-style: italic;
-}
-
-.nombres h3{
-    font-size: 15px;
-    margin: 0;
-    color: yellowgreen;
-}
-
-
-@media screen and (max-width: 800px) {
-    .barra{
-        width: 80%
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .sidebar {
+      display: none;
     }
-
-    .nombres{
-        font-size: 10px;
+    .content {
+      margin-left: 0;
     }
-}
+  }
+
+

@@ -1,0 +1,25 @@
+ .socialMediaa{
+    justify-content: center;
+    margin-top: 280px;
+    background-color: rgba(92, 91, 89, 0.63);
+    border-top: solid 1.5px rgba(255, 255, 255, 0.39);
+    border-bottom: solid 1.5px rgba(255, 255, 255, 0.39);
+    
+}
+
+.socialMediaa a{
+    color: white;
+    padding: 10px;
+    background: none;
+    font-style: italic;
+    border: none;
+    font-size: 22px;
+} 
+
+.socialMediaa a:hover{
+    color: black;
+}
+
+.socialMediaa div{
+    display: inline;
+}

@@ -27,7 +27,11 @@
     border: rgba(88, 85, 85, 0.521) 1px solid;
 }
 
-
+.block{
+    display: flex;
+    flex-direction: inline;
+    color: white;
+}
 
 @media screen and (max-width: 800px) {
     .nProjects{

@@ -1,13 +1,14 @@
 import React from 'react'
-import Projects from './projects';
+import Projects from './ProjektiSivuComp/projects';
 import styles from "./projektisivu.module.scss";
-import santa from "./media/santasnow.jpg"
-import web from "./media/web.png"
-import wolfgame from "./media/wolfgame.jpg"
-import java from "./media/java.png"
-import techweb from "./media/techweb.jpg"
-import dodgeball from "./media/dodgeball.png"
-import ShowProject from "./ShowProject"
+import santa from "../media/santasnow.jpg"
+import web from "../media/web.png"
+import {AiOutlineCaretLeft, AiOutlineCaretRight } from "react-icons/ai";
+import wolfgame from "../media/wolfgame.jpg"
+import java from "../media/java.png"
+import techweb from "../media/techweb.jpg"
+import dodgeball from "../media/dodgeball.png"
+import ShowProject from './ProjektiSivuComp/ShowProject';
 import { useState } from 'react';
 
 export type ProjektisivuProps = {
@@ -77,7 +78,11 @@ const Projektisivu: React.FC<ProjektisivuProps> = () => {
   <div>
     { currentItem && 
   <div className={styles.show}>
+        <div className={styles.block}>
+        <button><AiOutlineCaretLeft size={30}></AiOutlineCaretLeft></button>
         <ShowProject title={currentItem.title} year={currentItem.año} url={currentItem.url} language={currentItem.language} description={currentItem.description} />
+        <button><AiOutlineCaretRight size={30}></AiOutlineCaretRight></button>
+        </div>
         <div className={styles.showButton}>
         <button onClick={ () => setItem(null)}>Hide Description</button>
         </div>

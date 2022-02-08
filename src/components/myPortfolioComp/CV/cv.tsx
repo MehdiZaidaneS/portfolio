@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./cv.module.scss";
-import me from "./media/20211027_153242.jpg"
-import pdf from "./media/Mehdi Zaidane CV 2.pdf"
+import me from "../media/20211027_153242.jpg"
+import pdf from "../media/Mehdi Zaidane CV 2.pdf"
 
 
 
@@ -77,7 +77,7 @@ const Cv: React.FC<CvProps> = () => {
                   <h2>Lukio</h2>
                   <p>-IES Ben Gabirol (Malaga, Espanja) [2017 - 2018]</p>
                   <h2>Tieto ja viestinta tekniikka</h2>
-                  <p>-Vantaan ammattiopisto varia (Vantaa, Suomi) [2020 - 2023]</p>
+                  <p className={styles.lastp}>-Vantaan ammattiopisto varia (Vantaa, Suomi) [2020 - 2023]</p>
               </div>
             </div>
           </div>
