@@ -1,17 +1,18 @@
 body {
     margin: 0;
-    background: url(pexels-evie-shaffer-4004374.jpg);
     height: 100vh;
+    background: url(pexels-evie-shaffer-4004374.jpg);
 }
 
 .wrapper {
     float: right;
+
     width: 100%;
   }
   
   .content {
     margin-left: 320px;
-    padding-left: 25px;
+   
     clear: both;
     overflow: auto;
     height: 100vh;

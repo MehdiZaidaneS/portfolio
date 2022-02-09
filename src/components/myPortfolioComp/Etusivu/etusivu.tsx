@@ -28,10 +28,10 @@ const Etusivu: React.FC<EtusivuProps> = () => {
       <div className={styles.firstColumn}>
            
           <h1>WHO AM I?</h1>
-          <p>I'm Mehdi Zaidane, programming student at Vantaan Ammattiopisto Varia.<br></br>
+          <p>I'm <strong>Mehdi Zaidane</strong>, programming student at Vantaan Ammattiopisto Varia.<br></br>
           I like to program and I am interested in the development of web pages.</p>
+          <p className={styles.skills}>ReactJS / C# / Java / SQL</p>
           
-
           <Link to="cv" className={styles.boton}>Learn More</Link>
       </div>
       <div className={styles.secondColumn}>

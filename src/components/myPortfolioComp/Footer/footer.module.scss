@@ -1,23 +1,25 @@
 .socialMedia div{
-  
     margin-left: 10px;
     margin-right: 10px;
+    
+    
     
 }
 
 .socialMedia{
-    text-align: center;
-    background-color: rgba(116, 111, 111, 0.555);
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    font-size: 30px;
+  
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  background-color: rgba(255, 255, 255, 0.281);
+  font-size: 30px;
 }
 
 .facebook a{
   color: #2b5cc7;
+
 }
 
 .twitter a{

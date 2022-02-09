@@ -18,6 +18,7 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-size: 20px;
+    font-style: italic;
 }
 
 .secondColumn img{
@@ -29,9 +30,12 @@
 }
 
 .firstColumn h1{
-    font-size: 40px;
+    font-size: 80px;
     text-align: center;
-   
+    line-height: 0;
+    padding-top: 15px;
+    
+    
 }
 
 
@@ -113,6 +117,14 @@ button:hover{
     border: solid 2px rgba(255, 255, 255, 0.212);
 }
 
+strong {
+    color: yellowgreen;
+}
+
+.skills{
+   color: rgba(207, 199, 199, 0.699);
+   font-style: normal;
+}
 
 @media screen and (max-width: 800px) {
     .proyectos{

@@ -2,6 +2,7 @@ import React from 'react'
 import styles from "./cv.module.scss";
 import me from "../media/20211027_153242.jpg"
 import pdf from "../media/Mehdi Zaidane CV 2.pdf"
+import { get } from 'http';
 
 
 
@@ -12,7 +13,12 @@ type CvProps = {
 
 }
 
+
 const Cv: React.FC<CvProps> = () => {
+
+
+   
+
   return (
     <div>
       <div className={styles.columnas}>
@@ -86,6 +92,7 @@ const Cv: React.FC<CvProps> = () => {
         <a href={pdf} download >  
             <h2>·Download CV</h2>
         </a> 
+
       </div>
                  
                   

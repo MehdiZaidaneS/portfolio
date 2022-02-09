@@ -17,6 +17,7 @@ export type ProjektisivuProps = {
    año:number
    language: string
    url: string
+   id: number
 
 }
 
@@ -25,54 +26,67 @@ const Projektisivu: React.FC<ProjektisivuProps> = () => {
 
     const [currentItem, setItem] = useState<ProjektisivuProps|null>(null);
     
-  
     const proyectos: ProjektisivuProps[]= [
       {
         title: "SantaSnow",
         description: "SantaSnow is game built with Unity/C# in 2022. The game has 2 game modes and 3 different enemies. The goal of the game is to kill the final boss without losing the initial 5 lives.",
         año: 2022,
         language: "C#",
-        url: santa
+        url: santa,
+        id: 1
       },
       {
         title: "Tech Web",
         description: "This is a technology web page, not yet completed, created in 2021 with HTML and CSS.",
         año: 2021,
         language: "HTML & CSS",
-        url:techweb
+        url:techweb,
+        id: 2
       },
       {
         title: "The Wolf Adventure",
         description: "The Adventures of the Wolf it is a game created in group with Unity/C# in 2021.The game consists of overcoming 3 levels fighting with other animals and collecting mushrooms to gain special effects.",
         año: 2021,
         language: "C#",
-        url: wolfgame
+        url: wolfgame,
+        id: 3
       },
       {
         title: "Dodge the Ball",
         description: "Dodge the Ball was my first game built with Unity/C#. It was made in 2021.The game consists of dodging balls as their speed and spawn rate increase.",
         año: 2021,
         language: "C#",
-        url: dodgeball
+        url: dodgeball,
+        id: 4
       },
       {
         title: "Supervivientes",
         description: "Supervivientes was my first web page created with HTML and CSS. It was made in 2021. It is a fan page about the most popular programs in Spain.",
         año: 2021,
         language: "HTML & CSS",
-        url: web
+        url: web,
+        id: 5
       },
       {
         title: "RPG Game",
         description: "RPG Game was my first programming project, created with Java in 2021. The game consists of overcoming tasks and challenges and completing an incredible story.",
         año: 2021,
         language: "Java",
-        url: java
+        url: java,
+        id:6
       }
     ];  
 
-
-
+    
+    function nextButtonHandler(project:ProjektisivuProps){
+       if (proyectos.some(e => e.id === project.id+1)) {
+        setItem(proyectos[project.id+1])
+        console.log(proyectos[project.id+1])
+      }else{
+        setItem(proyectos[0])
+      }
+    }
+     
 
   return(
   <div>
@@ -81,7 +95,7 @@ const Projektisivu: React.FC<ProjektisivuProps> = () => {
         <div className={styles.block}>
         <button><AiOutlineCaretLeft size={30}></AiOutlineCaretLeft></button>
         <ShowProject title={currentItem.title} year={currentItem.año} url={currentItem.url} language={currentItem.language} description={currentItem.description} />
-        <button><AiOutlineCaretRight size={30}></AiOutlineCaretRight></button>
+        <button onClick={() => nextButtonHandler(currentItem)}><AiOutlineCaretRight size={30}></AiOutlineCaretRight></button>
         </div>
         <div className={styles.showButton}>
         <button onClick={ () => setItem(null)}>Hide Description</button>
