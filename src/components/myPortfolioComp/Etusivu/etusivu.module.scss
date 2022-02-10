@@ -2,7 +2,7 @@
 .columns{
     display: flex;
     flex-direction: inline;
-    padding-top: 20px;
+    padding-top: 40px;
     color: white;
     margin-top: 25px;
     text-align: center;
@@ -23,9 +23,10 @@
 
 .secondColumn img{
     margin-bottom: 20px;
-    background-color: rgba(44, 43, 43, 0.521);
+    background-color: rgba(37, 37, 37, 0.521);
     padding: 5px;
-    border: solid 1px rgba(255, 255, 255, 0.027);
+   
+    border-radius: 100%;
     
 }
 
@@ -46,10 +47,17 @@
     overflow: hidden;
 }
 
+
+
 .titulo h3{
     text-align: center;
     color: white;
     font-size: 30px;
+    padding-top: 20px;
+}
+
+.titulo h3:hover{
+    color: yellowgreen;
 }
 
 .imgbutton{
@@ -115,6 +123,10 @@ button:hover{
 
 .proyectos img{
     border: solid 2px rgba(255, 255, 255, 0.212);
+}
+
+.proyectos img:hover{
+    border: solid rgba(154, 205, 50, 0.212) 2px;
 }
 
 strong {

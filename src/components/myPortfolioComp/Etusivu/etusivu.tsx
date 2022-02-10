@@ -4,7 +4,7 @@ import img from "../media/20211027_153242.jpg"
 import santa from "../media/santasnow.jpg"
 import techweb from "../media/techweb.jpg"
 import wolfgame from "../media/wolfgame.jpg"
-import Cv from '../CV/cv'
+import NewCV from '../CV/newCV'
 import Projektisivu from '../ProjektiSivu/projektisivu'
 import {
   BrowserRouter as Router,
@@ -24,7 +24,7 @@ const Etusivu: React.FC<EtusivuProps> = () => {
   return (
     <div>
     <Router>
-      <Route exact path="/cv" component={Cv} />
+      <Route exact path="/cv" component={NewCV} />
       <Route exact path='/projects' component={Projektisivu}/>
     </Router>
     <div className= {styles.columns}>
