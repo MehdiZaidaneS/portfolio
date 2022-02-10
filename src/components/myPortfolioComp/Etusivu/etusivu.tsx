@@ -18,6 +18,9 @@ type EtusivuProps = {
 
 const Etusivu: React.FC<EtusivuProps> = () => {
 
+
+
+
   return (
     <div>
     <Router>
@@ -45,13 +48,19 @@ const Etusivu: React.FC<EtusivuProps> = () => {
     </div>
     <div className={styles.proyectos}>
          <div className={styles.firstImg}>
+         <Link to={{pathname:"/projects", state: 0}}>
            <img src={santa} alt='' width={350}height={210}></img>
+           </Link>
          </div>
          <div className={styles.secondImg}>
+         <Link to={{pathname:"/projects", state: 1}}>
            <img src={techweb} alt='' width={350}height={210}></img>
-         </div>
+           </Link>
+          </div>
          <div className={styles.thirdImg}>
+         <Link to={{pathname:"/projects", state: 2}}>
            <img src={wolfgame} alt='' width={350}height={210}></img>
+           </Link>
          </div> 
     </div>
     

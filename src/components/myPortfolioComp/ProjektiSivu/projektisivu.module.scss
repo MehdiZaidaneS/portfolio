@@ -10,7 +10,10 @@
 .show{
     text-align: center;
     padding-top: 10px;
+    
 }
+
+
 
 
 .nProjects button{
@@ -31,7 +34,11 @@
     display: flex;
     flex-direction: inline;
     color: white;
+    text-align: justify;
 }
+
+
+
 
 @media screen and (max-width: 800px) {
     .nProjects{
