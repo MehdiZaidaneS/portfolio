@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.99b17419.css",
-    "main.js": "./static/js/main.86743c88.js",
+    "main.css": "./static/css/main.f8e7ae3f.css",
+    "main.js": "./static/js/main.0108f03d.js",
     "static/js/787.86e70ff7.chunk.js": "./static/js/787.86e70ff7.chunk.js",
     "static/media/techweb.jpg": "./static/media/techweb.9972b2c98182ff3290fc.jpg",
     "static/media/wolfgame.jpg": "./static/media/wolfgame.d6dfd4ec0a5cafd73ecb.jpg",
@@ -13,12 +13,12 @@
     "static/media/Mehdi Zaidane CV 2.pdf": "./static/media/Mehdi Zaidane CV 2.f8715b316b1da5cbd2b1.pdf",
     "static/media/java.png": "./static/media/java.c868ef295cc32c6b540d.png",
     "index.html": "./index.html",
-    "main.99b17419.css.map": "./static/css/main.99b17419.css.map",
-    "main.86743c88.js.map": "./static/js/main.86743c88.js.map",
+    "main.f8e7ae3f.css.map": "./static/css/main.f8e7ae3f.css.map",
+    "main.0108f03d.js.map": "./static/js/main.0108f03d.js.map",
     "787.86e70ff7.chunk.js.map": "./static/js/787.86e70ff7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.99b17419.css",
-    "static/js/main.86743c88.js"
+    "static/css/main.f8e7ae3f.css",
+    "static/js/main.0108f03d.js"
   ]
 }
