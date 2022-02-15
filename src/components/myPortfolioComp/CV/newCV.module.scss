@@ -1,0 +1,22 @@
+.cvContainer p, li{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(192, 190, 190);
+    font-size: 15px;
+}
+
+.cvContainer h1{
+    font-size: 40px;
+}
+
+.firstColumn{
+     width:70%;
+}
+
+.secondColumn{
+    width: 70%;
+}
+
+.columnsCv{
+    display: flex;
+    flex-direction: inline;
+}
