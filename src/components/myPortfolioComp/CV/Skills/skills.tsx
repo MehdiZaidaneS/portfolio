@@ -64,7 +64,7 @@ const Skills: React.FC<SkillsProps> = () => {
           )
         })
       }
-
+      <div className={styles.listOfSkills}>
       <h2>Languages</h2>
       {
         languages.map(language => {
@@ -73,6 +73,7 @@ const Skills: React.FC<SkillsProps> = () => {
           )
         })
       }
+      </div>
     </div>
   )
 }

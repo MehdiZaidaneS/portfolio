@@ -19,11 +19,11 @@ const NewCV: React.FC<NewCVProps> = () => {
       <div className={styles.columnsCv}>
          <div className={styles.firstColumn}>
            <AboutMe></AboutMe>
-           <Skills></Skills>
+           <Education></Education>
          </div>
          <div className={styles.secondColumn}>
            <WorkExp></WorkExp> 
-           <Education></Education>
+           <Skills></Skills>
          </div>
       </div>
     </div>

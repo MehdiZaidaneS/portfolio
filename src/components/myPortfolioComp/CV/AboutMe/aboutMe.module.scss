@@ -1,12 +1,20 @@
+
 .textAboutMe{
     color: white;
-   
+    width: 80%;
     border: 3px solid rgba(255, 255, 255, 0.281);
+    margin: 0 auto;
     margin-top: 30px;
     text-align: center;
     height: fit-content;
+    background-color: rgba(104, 95, 95, 0.247);
+    box-shadow: 5px 10px #88888888;
     
     
+}
+
+.textAboutMe h1{
+    color: greenyellow;
 }
 
 .textAboutMe p{

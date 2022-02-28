@@ -3,9 +3,10 @@
     flex-direction: inline;
     justify-content: center;
     margin: 0 auto;
-    background-color: rgba(34, 33, 33, 0.274);
+     background-color: rgba(104, 95, 95, 0.247);
     border: 3px solid rgba(255, 255, 255, 0.281);
     width: 80%;
+    
 }
 
 .header div{
@@ -19,10 +20,11 @@
 }
 
 
+
 .info{
     color: white;
-    
 }
+
 
 
 .info h2{
@@ -34,4 +36,6 @@
 .info h3{
     font-style: italic;
     font-size: 35px;
+    color: greenyellow;
+    
 }

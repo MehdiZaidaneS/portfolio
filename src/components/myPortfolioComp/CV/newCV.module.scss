@@ -9,14 +9,28 @@
 }
 
 .firstColumn{
-     width:70%;
+     width:50%;
+      align-items: center;
 }
 
+.cvContainer{
+    background-color: rgba(48, 44, 44, 0.568);
+}
+
+
+
 .secondColumn{
-    width: 70%;
+    width: 40%;
+   
 }
 
 .columnsCv{
     display: flex;
     flex-direction: inline;
+}
+
+
+
+.columnsCv {
+    justify-content: center;
 }

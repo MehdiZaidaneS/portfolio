@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from "./skill.module.scss"
 
 type SkillProps = {
    language: string
@@ -7,7 +8,7 @@ type SkillProps = {
 
 const Skill: React.FC<SkillProps> = ({language, level}) => {
   return (
-    <div>
+    <div className={styles.listOfSkills}>
       <li>{language}: {level}.</li>
     </div>
   )

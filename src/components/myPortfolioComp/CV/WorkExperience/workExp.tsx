@@ -1,31 +1,46 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Work from './work'
-import {IoIosArrowDown} from "react-icons/io"
+import {IoIosArrowDown, IoIosArrowUp} from "react-icons/io"
 import styles from "./workExp.module.scss"
 
 type WorkExpProps = {
      
 }
 
+
+
 const works = [
     {
         id: 0,
         company: "CompanyName",
         exercise: "Software Developer",
-        date: "2001/11/05",
+        date: "11/2001-02/2022",
         place: "Myyrmäki, Vantaa"
 
-    },   
+    },
+    {
+      id: 1,
+      company: "CompanyName",
+      exercise: "Web Developer",
+      date: "11/2001-02/2022",
+      place: "Aviapolis, Vantaa"
+    }     
 ];
 
 
+
 const WorkExp: React.FC<WorkExpProps> = () => {
+
+  const [numberOfWork, setNumberOfWork] = useState(1);
+
+  const worksToShow =
+      works.filter(work => work.id < numberOfWork);
+
   return (
     <div className={styles.boxOfWork}>
       <h1>-- WORK EXPERIENCE --</h1>
-      <h2>Latest Work</h2>
       {
-      works.map(work => {
+      worksToShow.map(work => {
           return (
         <div className={styles.works} key={work.id}>
             <Work Company={work.company} Exercise={work.exercise} Date={work.date} Place={work.place}></Work>
@@ -33,7 +48,11 @@ const WorkExp: React.FC<WorkExpProps> = () => {
         )
       })
       }
-      <button><IoIosArrowDown></IoIosArrowDown></button>
+      {
+        numberOfWork < 2 ?
+      <button onClick={() => setNumberOfWork(numberOfWork+1) }><IoIosArrowDown></IoIosArrowDown></button> :
+      <button onClick={() => setNumberOfWork(1) }><IoIosArrowUp></IoIosArrowUp></button>
+      }
 
     </div>
   )
