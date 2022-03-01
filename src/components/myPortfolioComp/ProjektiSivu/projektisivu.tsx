@@ -156,6 +156,7 @@ const Projektisivu: React.FC<any> = (props) => {
 
   return(
   <div>
+    <h1 className={styles.title}>PROJECTS</h1>
     { currentItem && 
   <div className={styles.show}>
         <div className={styles.block}>

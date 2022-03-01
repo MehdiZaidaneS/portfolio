@@ -9,7 +9,6 @@ import {
 import NewCV from './components/myPortfolioComp/CV/newCV';
 import Etusivu from './components/myPortfolioComp/Etusivu/etusivu';
 import styles from './App.module.scss';
-
 import Projektisivu from './components/myPortfolioComp/ProjektiSivu/projektisivu';
 import SocialMedia from './components/myPortfolioComp/SidebarComp/SocialMedia';
 import Me from './components/myPortfolioComp/SidebarComp/Me';

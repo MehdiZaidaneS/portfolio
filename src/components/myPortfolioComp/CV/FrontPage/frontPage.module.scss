@@ -5,37 +5,72 @@
     margin: 0 auto;
      background-color: rgba(104, 95, 95, 0.247);
     border: 3px solid rgba(255, 255, 255, 0.281);
-    width: 80%;
-    
+    width: 80%; 
 }
 
 .header div{
     padding: 20px;
-
 }
-
 
 .pic img{
     border: 2px solid white;
 }
 
-
-
 .info{
+    margin-top: 50px;
     color: white;
 }
-
-
 
 .info h2{
     font-size: 100px;
     line-height: 0;
     margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 .info h3{
+
     font-style: italic;
     font-size: 35px;
     color: greenyellow;
-    
+}
+
+.contact{
+    text-align: center;
+}
+
+.boton{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(44, 43, 43, 0.521);
+    color: white;
+    border: rgba(255, 255, 255, 0.144) 1px solid;
+    font-size: 17px;
+    text-decoration: none;
+    margin-top: 10px;
+    padding: 4px;
+    text-align: center;
+}
+
+.boton:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.contact{
+    text-align: center;
+}
+
+.contact button{
+    font-size: 23px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10%;
+    color: rgb(255, 255, 255);
+    font-family:'Times New Roman', Times, serif
+}
+
+.contact button:hover{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(117, 117, 117);
+    color: rgb(255, 255, 255);
 }

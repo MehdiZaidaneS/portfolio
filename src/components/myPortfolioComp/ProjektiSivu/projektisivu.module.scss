@@ -36,8 +36,28 @@
     flex-direction: inline;
     color: white;
     text-align: justify;
+    justify-content: center;
 }
 
+.block button{
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.219);
+    border: 1px solid rgba(255, 255, 255, 0.322);
+}
+
+.block button:hover{
+    background-color: rgba(53, 53, 53, 0.856);
+
+}
+
+.title{
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    line-height: 0;
+    font-style: italic;
+   
+}
 
 
 
