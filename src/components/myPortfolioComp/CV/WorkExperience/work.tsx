@@ -18,9 +18,21 @@ const Work: React.FC<WorkProps> = ({Company, Exercise, Date, Place}) => {
          <h2>{Exercise}</h2>
       </div>
       <div className={styles.workInfo}>
-        <p><HiOfficeBuilding size={18}></HiOfficeBuilding> {Company}</p>
-        <p><BsFillCalendarDayFill size={15}></BsFillCalendarDayFill> {Date}</p>
-        <p><IoLocation size={18}></IoLocation> {Place}</p>
+        <div>
+            <HiOfficeBuilding size={18}></HiOfficeBuilding>
+            <p>{Company}</p>
+        </div>
+        <div>
+            <BsFillCalendarDayFill size={15}></BsFillCalendarDayFill>
+            <p>{Date}</p>
+        </div>
+        <div>
+            <IoLocation size={18}></IoLocation>
+            <p>{Place}</p>
+        </div>
+        
+       
+        
       </div>
     </div>
   )

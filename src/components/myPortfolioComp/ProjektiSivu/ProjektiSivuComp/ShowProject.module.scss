@@ -12,11 +12,14 @@
  
 }
 
-
+.info{
+    margin: 0 auto;
+}
 
 .info p{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: italic;
+    user-select: none;
 }
 
 .info h1 {
@@ -27,6 +30,7 @@
 
 .picture{
     margin: 10px;
+    margin-right: 0px;
     border: 2.5px solid rgba(255, 255, 255, 0.116);
     width: fit-content;
 }

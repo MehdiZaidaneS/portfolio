@@ -18,9 +18,18 @@ const EducationEntry: React.FC<EducationEntryProps> = ({school, title, years, lo
          <h2>{title}</h2>
        </div>
        <div className={styles.educationInfo}>
-         <p><FaSchool size={20}></FaSchool> {school}</p> 
-         <p><BsFillCalendarDayFill size={15}></BsFillCalendarDayFill> {years}</p>
-         <p><IoLocation size={18}></IoLocation> {location}</p>
+         <div>
+            <FaSchool size={20}></FaSchool>
+            <p>{school}</p> 
+         </div>
+         <div>
+            <BsFillCalendarDayFill size={15}></BsFillCalendarDayFill>
+            <p>{years}</p>
+         </div>
+         <div>
+            <IoLocation size={18}></IoLocation>
+            <p>{location}</p>
+         </div>
        </div>
     </div>
   )

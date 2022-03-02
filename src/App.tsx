@@ -25,9 +25,9 @@ const App: React.FC = () => {
     <div className={styles.wrapper}>
       <div className={styles.content}>
          <Switch>
-          <Route exact path='/' component={Etusivu} />
-          <Route exact path='/projects' component={Projektisivu}/>
-          <Route exact path= '/cv' component={NewCV} />
+            <Route exact path='/' component={Etusivu} />
+            <Route exact path='/projects' component={Projektisivu}/>
+            <Route exact path= '/cv' component={NewCV} />
         </Switch>        
       </div>
     </div>
@@ -35,10 +35,9 @@ const App: React.FC = () => {
     <div className={styles.sidebar}>
         <Me/>
         <div className={styles.thea}>
-        <Link to='/'>Home</Link>
-        <Link to='projects'>Projects</Link>
-        <Link to= 'cv'>CV</Link>
-        <a href='https://github.com/MehdiZaidaneS' target={'_blank'} rel='noreferrer'>GitHub</a>
+          <Link to='/'>Home</Link>
+          <Link to='projects'>Projects</Link>
+          <Link to= 'cv'>CV</Link>
         </div>
         <SocialMedia />
     </div>
