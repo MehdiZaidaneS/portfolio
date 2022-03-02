@@ -30,9 +30,6 @@ const Work: React.FC<WorkProps> = ({Company, Exercise, Date, Place}) => {
             <IoLocation size={18}></IoLocation>
             <p>{Place}</p>
         </div>
-        
-       
-        
       </div>
     </div>
   )

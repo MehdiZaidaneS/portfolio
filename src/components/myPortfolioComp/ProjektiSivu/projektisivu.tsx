@@ -18,12 +18,11 @@ export type ProjektisivuProps = {
    language: string
    url: string
    id: number
-
 }
 
 const Projektisivu: React.FC<any> = (props) => {
-
-
+    
+    const [languageShow, setLanguageShow] = useState("");
     const [currentItem, setItem] = useState<ProjektisivuProps|null>(null);
     
     useEffect(() =>{
@@ -152,11 +151,19 @@ const Projektisivu: React.FC<any> = (props) => {
        setItem(proyectos[5])
      }
    }
-     
+  
+
+   
+   const projectToShow = proyectos.filter( project => project.language === languageShow)
 
   return(
+    
   <div>
     <h1 className={styles.title}>PROJECTS</h1>
+    <button onClick={ () => setLanguageShow("")}>All</button>
+    <button onClick={ () => setLanguageShow("C#")}>C#</button>
+    <button onClick={ () => setLanguageShow("Java")}>Java</button>
+    <button onClick={ () => setLanguageShow("HTML & CSS")}>HTML</button>
     { currentItem && 
   <div className={styles.show}>
         <div className={styles.block}>
@@ -172,9 +179,30 @@ const Projektisivu: React.FC<any> = (props) => {
   }
 
   
-      <div className={styles.nProjects}>
+      {/* <div className={styles.nProjects}>
         {
           proyectos.map(x => {
+            return (
+              <div key={x.url}>
+                <Projects urls={x.url} title={x.title}></Projects>
+                <button onClick={() => setItem(x)}>See more</button>
+              </div>
+            )
+          })
+        }
+     </div> */}
+     <div className={styles.nProjects}>
+        {
+         languageShow === "" ?  
+          proyectos.map(x => {
+            return (
+              <div key={x.url}>
+                <Projects urls={x.url} title={x.title}></Projects>
+                <button onClick={() => setItem(x)}>See more</button>
+              </div>
+            )
+          }) :  
+          projectToShow.map(x => {
             return (
               <div key={x.url}>
                 <Projects urls={x.url} title={x.title}></Projects>

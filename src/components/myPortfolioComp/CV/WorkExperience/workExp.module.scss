@@ -15,9 +15,6 @@
     color:greenyellow;
 }
 
-.boxOfWork button{
-    margin-bottom: 5px;
-}
 .works div{
     margin: 0 auto;
     justify-content: center;
@@ -25,4 +22,21 @@
 
 .works{
     margin-bottom: 10px;
+}
+
+.boxOfWork button{
+    font-size: 20px;
+    border: none;
+    background: none;
+    display: flex;
+    flex-direction: inline;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxOfWork button:hover{
+    color: greenyellow;
+    background: none;
 }
