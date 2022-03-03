@@ -135,26 +135,28 @@ const Projektisivu: React.FC<any> = (props) => {
       }
     ];  
 
+    const nextButtonHandler = (project: ProjektisivuProps) => {
+      let nextIndex:number = 0;
+      const currentIndex = projectToShow.findIndex(x => project.id === x.id);
+      nextIndex = currentIndex === projectToShow.length - 1 ?  0  : currentIndex + 1;
+      setItem(projectToShow[nextIndex]);
+    }    
     
-    function nextButtonHandler(project:ProjektisivuProps){
-       if (proyectos.some(e => e.id === project.id+1)) {
-        setItem(proyectos[project.id+1])
-      }else{
-        setItem(proyectos[0])
-      }
-    }
 
-    function previousButtonHandler(project:ProjektisivuProps){
-      if (proyectos.some(e => e.id === project.id-1)) {
-       setItem(proyectos[project.id-1])
-     }else{
-       setItem(proyectos[5])
-     }
-   }
+  const previousButtonHandler = (project: ProjektisivuProps) => {
+    let nextIndex:number = 0;
+    const currentIndex = projectToShow.findIndex(x => project.id === x.id);
+    nextIndex = currentIndex === 0 ? projectToShow.length - 1 : currentIndex - 1;
+    setItem(projectToShow[nextIndex]);
+  }
   
 
+   const projectToShow = languageShow === "" ?
+    proyectos.filter( project => project.id > -1)
+   :
+    proyectos.filter( project => project.language === languageShow)
    
-   const projectToShow = proyectos.filter( project => project.language === languageShow)
+   
 
   return(
     
@@ -164,10 +166,16 @@ const Projektisivu: React.FC<any> = (props) => {
     <button onClick={ () => setLanguageShow("C#")}>C#</button>
     <button onClick={ () => setLanguageShow("Java")}>Java</button>
     <button onClick={ () => setLanguageShow("HTML & CSS")}>HTML</button>
+    <button onClick={ () => setLanguageShow("Python")}>Python</button>
     { currentItem && 
   <div className={styles.show}>
         <div className={styles.block}>
-          <button className={styles.buttonLeft}onClick={() => previousButtonHandler(currentItem)}><AiOutlineCaretLeft size={30}></AiOutlineCaretLeft></button>
+
+          <button className={styles.buttonLeft}
+            onClick={() => previousButtonHandler(currentItem)}>
+            <AiOutlineCaretLeft size={30}/>
+          </button>
+
           <ShowProject title={currentItem.title} year={currentItem.año} url={currentItem.url} language={currentItem.language} description={currentItem.description} />
           <button className={styles.buttonRight} onClick={() => nextButtonHandler(currentItem)}><AiOutlineCaretRight size={30}></AiOutlineCaretRight></button>
         </div>
@@ -177,31 +185,8 @@ const Projektisivu: React.FC<any> = (props) => {
         <hr></hr>
   </div>
   }
-
-  
-      {/* <div className={styles.nProjects}>
-        {
-          proyectos.map(x => {
-            return (
-              <div key={x.url}>
-                <Projects urls={x.url} title={x.title}></Projects>
-                <button onClick={() => setItem(x)}>See more</button>
-              </div>
-            )
-          })
-        }
-     </div> */}
      <div className={styles.nProjects}>
-        {
-         languageShow === "" ?  
-          proyectos.map(x => {
-            return (
-              <div key={x.url}>
-                <Projects urls={x.url} title={x.title}></Projects>
-                <button onClick={() => setItem(x)}>See more</button>
-              </div>
-            )
-          }) :  
+        { 
           projectToShow.map(x => {
             return (
               <div key={x.url}>
