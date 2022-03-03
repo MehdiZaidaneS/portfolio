@@ -22,6 +22,7 @@ export type ProjektisivuProps = {
 
 const Projektisivu: React.FC<any> = (props) => {
     
+    
     const [languageShow, setLanguageShow] = useState("");
     const [currentItem, setItem] = useState<ProjektisivuProps|null>(null);
     
@@ -155,6 +156,10 @@ const Projektisivu: React.FC<any> = (props) => {
     proyectos.filter( project => project.id > -1)
    :
     proyectos.filter( project => project.language === languageShow)
+
+  
+
+   
    
    
 
@@ -162,11 +167,28 @@ const Projektisivu: React.FC<any> = (props) => {
     
   <div>
     <h1 className={styles.title}>PROJECTS</h1>
-    <button onClick={ () => setLanguageShow("")}>All</button>
-    <button onClick={ () => setLanguageShow("C#")}>C#</button>
-    <button onClick={ () => setLanguageShow("Java")}>Java</button>
-    <button onClick={ () => setLanguageShow("HTML & CSS")}>HTML</button>
-    <button onClick={ () => setLanguageShow("Python")}>Python</button>
+    <div className={styles.showType}>
+      <ul>
+        <li><button onClick={ () => setLanguageShow("")}>· Show All</button></li>
+        <li>· Languages
+            <div className={styles.buttons}>
+               {/* <button onClick={ () => setLanguageShow("")}>All</button> */}
+               <button onClick={ () => setLanguageShow("C#")}>C#</button>
+               <button onClick={ () => setLanguageShow("Java")}>Java</button>
+               <button onClick={ () => setLanguageShow("HTML & CSS")}>HTML</button>
+               <button onClick={ () => setLanguageShow("Python")}>Python</button>
+          </div>
+        </li>
+        <li>· Years
+              <div className={styles.buttons}>
+                <button onClick={ () => setLanguageShow("HTML & CSS")}>2022</button>
+                <button onClick={ () => setLanguageShow("Python")}>2021</button>
+              </div>
+        </li>
+      </ul>
+    </div>
+    
+  
     { currentItem && 
   <div className={styles.show}>
         <div className={styles.block}>
@@ -185,6 +207,10 @@ const Projektisivu: React.FC<any> = (props) => {
         <hr></hr>
   </div>
   }
+
+   
+
+
      <div className={styles.nProjects}>
         { 
           projectToShow.map(x => {
