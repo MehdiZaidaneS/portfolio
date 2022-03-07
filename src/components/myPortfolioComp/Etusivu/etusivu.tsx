@@ -29,7 +29,6 @@ const Etusivu: React.FC<EtusivuProps> = () => {
     </Router>
     <div className= {styles.columns}>
       <div className={styles.firstColumn}>
-           
           <h1>WHO AM I?</h1>
           <p>I'm <strong>Mehdi Zaidane</strong>, programming student at Vantaan Ammattiopisto Varia.<br></br>
           I like to program and I am interested in the development of web pages.</p>

@@ -4,87 +4,125 @@ body {
     background: url(pexels-evie-shaffer-4004374.jpg);
 }
 
+
 .wrapper {
-    float: right;
+  float: right;
+  width: 100%;
+}
 
-    width: 100%;
-  }
-  
-  .content {
-    margin-left: 320px;
-   
-    clear: both;
-    overflow: auto;
-    height: 100vh;
-  }
-  
-  .contentHeader {
-    margin-bottom: 15px;
-    border-bottom: solid rgb(153, 153, 153);
-  }
-  
-  .contentHeader h1 {
-      font-size: 60px;
-      font-family: 'Mukta-Extra-Bold';
-      color: #E8E8E8;
-      line-height: 60px;
-      margin: 10px 0;
-      margin-bottom: 0;
-    }
-  
-  .contentHeader h2 {
-      margin: 0px;
-      padding: 0;
-      padding-bottom: 15px;
-      font-size: 25px;
-      color: #d1d1d1;
-    }
-  
+.content {
+  margin-left: 320px;
+  clear: both;
+  overflow: auto;
+  height: 100vh;
+}
+
+
+.sidebar {
+  text-align: center;
+  position: relative;
+  width: 320px;
+  margin-right: -320px;
+  float: left;
+  overflow: hidden;
+  background: rgb(54,62,73);
+  color: #eee;
+  height: 100vh;
+  -moz-box-shadow:    3px 0 5px 0 #555;
+  -webkit-box-shadow: 3px 0 5px 0 #555;
+  box-shadow:         3px 0 5px 0 #555;
+}
+ 
+.thea{
+    padding-top: 20px;
+}
+
+.thea a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.322);
+}
+
+.thea a:hover{
+  background-color: white;
+  color: black;
+}
+
+.footer{
+  display: none;
+}
+
+
+
+@media screen and (max-width: 1260px){
   .sidebar {
-    text-align: center;
-  
-    position: relative;
-    width: 320px;
-    margin-right: -320px;
-    float: right;
-    overflow: hidden;
-    background: rgb(54,62,73);
-    color: #eee;
-    height: 100vh;
-  
-    -moz-box-shadow:    3px 0 5px 0 #555;
-    -webkit-box-shadow: 3px 0 5px 0 #555;
-    box-shadow:         3px 0 5px 0 #555;
-  }
-   
-  .thea{
-      padding-top: 20px;
+    width: 250px;
+    margin-right: -250px;
   }
 
-  .thea a{
-      display: block;
-      color: white;
-      text-decoration: none;
-      font-size: 23px;
-      margin-bottom: 10px;
-      padding: 5px;
-      background-color: rgba(0, 0, 0, 0.322);
+  .content {
+    margin-left: 250px;
+  
   }
+}
 
-  .thea a:hover{
+   @media only screen and (max-width: 900px) {
+    .wrapper {
+      float: right;
+      width: 100%;
+    }
     
-    background-color: white;
-    color: black;
-  }
-  
-
-  @media only screen and (max-width: 768px) {
-    .sidebar {
-      display: none;
-    }
     .content {
-      margin-left: 0;
+      margin-left: 0px;
+      clear:none;
+      overflow: visible;
+      height: fit-content;
     }
-  }
+    
+    
+    .sidebar {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      position:static;
+      width: 100%;
+      margin-right: 0px;
+      float: none;
+      overflow:visible;
+      background: rgb(54,62,73);
+      color: #eee;
+      height: fit-content;
+      -moz-box-shadow:    none;
+      -webkit-box-shadow: none;
+      box-shadow:         none;
+    }
+     
+    .thea{
+        padding-top: 12px;
+        height: fit-content;
+    }
+    
+    .thea a{
+        display: inline;
+        color: white;
+        text-decoration: none;
+        font-size: 27px;
+        padding: 5px;
+        background: none;
+    }
+    
+    .thea a:hover{
+      background-color: white;
+      color: black;
+    }
 
+
+    .footer{
+      display: block;
+    }
+}
 

@@ -9,6 +9,7 @@ import {
 import NewCV from './components/myPortfolioComp/CV/newCV';
 import Etusivu from './components/myPortfolioComp/Etusivu/etusivu';
 import styles from './App.module.scss';
+import Footer from './components/myPortfolioComp/Footer/footer';
 import Projektisivu from './components/myPortfolioComp/ProjektiSivu/projektisivu';
 import SocialMedia from './components/myPortfolioComp/SidebarComp/SocialMedia';
 import Me from './components/myPortfolioComp/SidebarComp/Me';
@@ -22,6 +23,16 @@ const App: React.FC = () => {
   return (
     <Router basename='/portfolio'>
 
+
+    <div className={styles.sidebar}>
+            <Me/>
+            <div className={styles.thea}>
+              <Link to='/'>Home</Link>
+              <Link to='projects'>Projects</Link>
+              <Link to= 'cv'>CV</Link>
+            </div>
+            <SocialMedia />
+    </div>
     <div className={styles.wrapper}>
       <div className={styles.content}>
          <Switch>
@@ -31,18 +42,9 @@ const App: React.FC = () => {
         </Switch>        
       </div>
     </div>
-
-    <div className={styles.sidebar}>
-        <Me/>
-        <div className={styles.thea}>
-          <Link to='/'>Home</Link>
-          <Link to='projects'>Projects</Link>
-          <Link to= 'cv'>CV</Link>
-        </div>
-        <SocialMedia />
+    <div className={styles.footer}>
+      <Footer></Footer>
     </div>
-    
-    
   </Router>
 
 

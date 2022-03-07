@@ -39,3 +39,41 @@
     margin: 0;
     color: yellowgreen;
 }
+
+ @media only screen and (max-width: 900px) {
+     .fotos{
+    justify-content:center;
+    padding-left: 0px;
+    padding-top: 5px;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    padding-right:0px;
+    background: none;
+    border-bottom: none;
+    height: fit-content;
+}
+
+.fotos img{
+    border-radius: 100%;
+    border: solid rgba(255, 255, 255, 0.384) 2px;
+    margin-right: 10px;
+    height: fit-content;
+    display: block;
+    
+}
+
+.fotos img:hover{
+    border: solid rgba(154, 205, 50, 0.384) 2px;
+}
+
+.nombres{
+    display: none;
+    padding-bottom: 0px;
+}
+
+.fotos img{
+    width: 40px;
+    height: 40px;
+}
+
+} 

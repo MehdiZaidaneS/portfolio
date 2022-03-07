@@ -1,34 +1,27 @@
-.socialMedia div{
-    margin-left: 10px;
-    margin-right: 10px;
-    
-    
-    
+.socialMedia a{
+  color: white;
+  font-size: 28px;
+  padding: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+
+.socialMedia a:hover{
+  color: black;
 }
 
 .socialMedia{
-  
   display: flex;
   width: 100%;
-  align-items: center;
   justify-content: center;
-  position: sticky;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.281);
   font-size: 30px;
 }
 
-.facebook a{
-  color: #2b5cc7;
-
-}
-
-.twitter a{
-  color: #49a1eb;
-}
-
-.instagram a{
-  color: black;
-}
 
 
 

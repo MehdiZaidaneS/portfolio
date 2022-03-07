@@ -34,11 +34,6 @@
     line-height: 0;
     padding-top: 15px;
     white-space: nowrap;
-    
-    @media screen and (max-width: 1070px) {
-        font-size: 55px;
-    }
-    
 }
 
 
@@ -58,9 +53,6 @@
     padding-top: 20px;
 }
 
-.titulo h3:hover{
-    color: yellowgreen;
-}
 
 .imgbutton{
     text-align: center;
@@ -141,7 +133,19 @@ strong {
    font-style: normal;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1400px) {
+    .proyectos img{
+        width: 310px;
+        height: 190px;
+    }  
+}
+
+@media screen and (max-width: 1260px) {
+    .proyectos img{
+        width: 350px;
+        height: 210px;
+    }
+
     .proyectos{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -149,32 +153,67 @@ strong {
         overflow: hidden;
     }
     
+    .proyectos div{
+        margin-top: 10px;
+    }
+   
+    .columns{
+        padding-top: 0px;
+    }
+    .secondColumn{
+        display: none;   
+     }
 
+     .firstColumn{
+         padding-right: 0;
+         text-align: center;
+         justify-content: center;
+     }
+
+     .hache{
+        margin-top: 50px;
+    }
+    
+}
+@media screen and (max-width: 900px) {
+    .proyectos{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+        overflow: hidden;
+    }
+    
     .proyectos div{
         margin-top: 10px;
     }
     
-    .secondColumn img{
-        width: 150px;
-        height: 235px;
+    .secondColumn{
+       display: none;   
     }
 
     .columns{
-        width: fit-content;
-        
+        width: 100%;
+        padding-top: 0px;
     }
 
     .firstColumn{
         padding-right: 0px;
+        margin-right: 0px;
     }
 
 
     .firstColumn h1 {
-        font-size: 35px;
+        font-size: 70px;
         width: 100%;
+        padding-top: 5px;
     }
 
     .firstColumn p {
-        font-size: 15px;
+        font-size: 20px;
     }
+
+    .hache{
+        margin-top: 50px;
+    }
+
 }
