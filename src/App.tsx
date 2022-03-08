@@ -27,9 +27,9 @@ const App: React.FC = () => {
     <div className={styles.sidebar}>
             <Me/>
             <div className={styles.thea}>
-              <Link to='/'>Home</Link>
-              <Link to='projects'>Projects</Link>
-              <Link to= 'cv'>CV</Link>
+              <Link to='/' className={styles.current}>Home</Link>
+              <Link to='projects'  className={styles.current}>Projects</Link>
+              <Link to= 'cv'  className={styles.current}>CV</Link>
             </div>
             <SocialMedia />
     </div>

@@ -33,22 +33,22 @@ const programmingskills = [
   {
     id: 0,
     name: "React",
-    level: "Undefined"
+    level: "Good"
   },
   {
     id: 1,
     name: "Java",
-    level: "Undefined"
+    level: "Good"
   },
   {
     id: 2,
     name: "SQL",
-    level: "Undefined"
+    level: "Basic"
   },
   {
     id: 3,
     name: "C#",
-    level: "Undefined"
+    level: "Good"
   },
 ]
 

@@ -12,17 +12,17 @@ type WorkExpProps = {
 const works = [
     {
         id: 0,
-        company: "CompanyName",
+        company: "XXX",
         exercise: "Software Developer",
-        date: "11/2001-02/2022",
+        date: "XX/XXXX-XX/XXXX",
         place: "Myyrmäki, Vantaa"
 
     },
     {
       id: 1,
-      company: "CompanyName",
+      company: "XXX",
       exercise: "Web Developer",
-      date: "11/2001-02/2022",
+      date: "XX/XXXX-XX/XXXX",
       place: "Aviapolis, Vantaa"
     }     
 ];

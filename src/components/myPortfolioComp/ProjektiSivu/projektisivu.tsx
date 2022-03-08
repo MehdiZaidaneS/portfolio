@@ -196,7 +196,6 @@ const Projektisivu: React.FC<any> = (props) => {
                <button onClick={ () => {setLanguageShow("C#"); setYearShow(0);}}>C#</button>
                <button onClick={ () => {setLanguageShow("Java"); setYearShow(0);}}>Java</button>
                <button onClick={ () => {setLanguageShow("HTML & CSS"); setYearShow(0);}}>HTML</button>
-               <button onClick={ () => {setLanguageShow("Python"); setYearShow(0);}}>Python</button>
             </div>
         </li>
         <li>· Years
