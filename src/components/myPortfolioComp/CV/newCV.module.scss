@@ -18,10 +18,8 @@
 }
 
 
-
 .secondColumn{
     width: 40%;
-   
 }
 
 .columnsCv{
@@ -29,8 +27,28 @@
     flex-direction: inline;
 }
 
-
-
 .columnsCv {
     justify-content: center;
+}
+
+
+
+@media screen and (max-width: 1475px) {
+    .firstColumn{
+        width:100%;
+        margin: 0 auto;
+        justify-content: center;
+   }
+   
+   
+   .secondColumn{
+       width: 100%;
+       margin: 0 auto;
+        justify-content: center;
+   }
+   
+   .columnsCv{
+       display: block;
+       justify-content: center;
+   }
 }

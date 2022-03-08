@@ -33,6 +33,7 @@ const App: React.FC = () => {
             </div>
             <SocialMedia />
     </div>
+    
     <div className={styles.wrapper}>
       <div className={styles.content}>
          <Switch>

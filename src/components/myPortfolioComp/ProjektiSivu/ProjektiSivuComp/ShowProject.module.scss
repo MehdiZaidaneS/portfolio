@@ -38,16 +38,26 @@
 
 
 
+@media screen and (max-width: 1200px) {
+    .contenedor{
+        width:70%;
+        display: block;
+       }
+
+    .picture{
+        margin: auto;
+        border: none;
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .contenedor{
         width:fit-content;
         display: block;
        }
 
-    .picture img{
-        width: 350px;
-        height: 210px;
-    }
+ 
 
     .picture{
         margin: auto;
