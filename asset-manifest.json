@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.6bb83284.css",
-    "main.js": "./static/js/main.b6b0e073.js",
+    "main.css": "./static/css/main.a4aabf0d.css",
+    "main.js": "./static/js/main.8a995d45.js",
     "static/js/787.86e70ff7.chunk.js": "./static/js/787.86e70ff7.chunk.js",
     "static/media/techweb.jpg": "./static/media/techweb.9972b2c98182ff3290fc.jpg",
     "static/media/wolfgame.jpg": "./static/media/wolfgame.d6dfd4ec0a5cafd73ecb.jpg",
@@ -12,12 +12,12 @@
     "static/media/20211027_153242.jpg": "./static/media/20211027_153242.6f475b8a21196c4606d5.jpg",
     "static/media/java.png": "./static/media/java.c868ef295cc32c6b540d.png",
     "index.html": "./index.html",
-    "main.6bb83284.css.map": "./static/css/main.6bb83284.css.map",
-    "main.b6b0e073.js.map": "./static/js/main.b6b0e073.js.map",
+    "main.a4aabf0d.css.map": "./static/css/main.a4aabf0d.css.map",
+    "main.8a995d45.js.map": "./static/js/main.8a995d45.js.map",
     "787.86e70ff7.chunk.js.map": "./static/js/787.86e70ff7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6bb83284.css",
-    "static/js/main.b6b0e073.js"
+    "static/css/main.a4aabf0d.css",
+    "static/js/main.8a995d45.js"
   ]
 }
