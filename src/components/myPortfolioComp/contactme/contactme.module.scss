@@ -1,0 +1,52 @@
+.contact{
+    position: absolute;
+    color: white;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: black;
+    border: 1px solid white;
+    width: 40%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.contact h1{
+    text-align: center;
+    line-height: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.email{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.email button{
+    border: 1px solid white;
+    width: fit-content;
+    height: fit-content;
+    background: none;
+    margin-left: 5px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.email button:hover{
+    background: none;
+}
+
+.typeOfEmail{
+    font-size: 30px;
+    text-align: center;
+}
+
+.typeOfEmail a {
+    color: white;
+    padding: 5px;
+}
+
+.typeOfEmail a:hover{
+    color: greenyellow
+}
