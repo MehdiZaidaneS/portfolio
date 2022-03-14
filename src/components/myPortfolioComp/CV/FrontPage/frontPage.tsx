@@ -27,7 +27,10 @@ const FrontPage: React.FC<FrontPageProps> = () => {
       <div className={styles.info}>
         <div>
           <h3>Web developer</h3>
-          <h2>Mehdi Zaidane</h2>
+          <h2 className={styles.firstName}>Mehdi Zaidane</h2>
+          <h2 className={styles.secondName}>Mehdi</h2>
+          <h2 className={styles.secondName}>Zaidane</h2>
+          
           <div className={styles.contact} id="id">
              <button onClick={() => setContactShow(!contactShow)}>Contact Me</button>
           </div>

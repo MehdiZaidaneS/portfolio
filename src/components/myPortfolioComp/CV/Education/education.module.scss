@@ -41,3 +41,10 @@
     color: greenyellow;
 }
 
+@media screen and (max-width:600px) {
+    .boxOfEducation{
+        width: fit-content;
+    }
+    
+}
+

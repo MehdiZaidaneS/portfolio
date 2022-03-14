@@ -26,7 +26,7 @@
     line-height: 0;
     margin: 0 auto;
     margin-bottom: 40px;
-    white-space: nowrap;
+   
 }
 
 .info h3{
@@ -95,9 +95,11 @@
 .buttonContact:hover{
     margin-left: 60px;
     color: greenyellow;
-    background: none;   
+    background-color: rgb(107, 100, 100);   
    }
 
+
+   .secondName {display: none;}
 
 
 
@@ -137,5 +139,23 @@
 .info{
     margin-top: 0px;
 }
+
 }
+
+
+@media screen and (max-width: 620px) {
   
+    .firstName{
+        display: none;
+    }
+
+    .secondName{
+        display: block;
+        padding: 10px;
+    }
+
+ }
+
+
+
+

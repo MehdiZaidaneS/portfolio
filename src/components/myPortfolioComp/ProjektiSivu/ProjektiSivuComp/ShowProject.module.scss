@@ -20,6 +20,7 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: italic;
     user-select: none;
+    margin-bottom: 40px;
 }
 
 .info h1 {
@@ -37,13 +38,14 @@
 
 .info a{
     font-size: 20px;
-    color: white;
+    color: rgba(172, 255, 47, 0.55);
     text-decoration: none;
-
+    font-style: italic;
 }
 
 .info a:hover{
-    text-decoration: underline;
+    color: rgb(172, 255, 47);
+    
 }
 
 
@@ -57,6 +59,13 @@
         margin: auto;
         border: none;
         text-align: center;
+    }
+
+    .info p{
+        margin-bottom: 20px;
+    }
+    .info a{
+        margin-bottom: 10px;
     }
 }
 
@@ -72,5 +81,13 @@
         margin: auto;
         border: none;
         text-align: center;
+    }
+
+    .info p{
+        margin-bottom: 20px;
+    }
+
+    .info a{
+        margin-bottom: 10px;
     }
 }
