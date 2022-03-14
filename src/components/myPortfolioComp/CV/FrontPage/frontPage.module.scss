@@ -77,6 +77,30 @@
 }
 
 
+.contactBlock{
+    position: absolute;
+    color: white;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 40%;
+    text-align: center;
+    line-height: 0;
+}
+
+.buttonContact{
+ margin-left: 60px;
+ background-color: rgb(107, 100, 100);
+}
+
+.buttonContact:hover{
+    margin-left: 60px;
+    color: greenyellow;
+    background: none;   
+   }
+
+
+
+
 @media screen and (max-width: 1560px) {
    
     .info h2{

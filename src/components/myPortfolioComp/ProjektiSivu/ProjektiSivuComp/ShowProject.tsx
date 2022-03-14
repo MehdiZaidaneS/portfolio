@@ -9,10 +9,11 @@ year: number
 url: string
 language: string
 description: string
+link: string
 
 }
 
-const ShowProject: React.FC<ShowProjectProps> = ({title, url, year, language, description}) => {
+const ShowProject: React.FC<ShowProjectProps> = ({title, url, year, language, description, link}) => {
   return (
   
     
@@ -23,6 +24,7 @@ const ShowProject: React.FC<ShowProjectProps> = ({title, url, year, language, de
       <div className={styles.info}>
         <h1>{title}</h1>
         <p>{description}</p>
+        <a href={link} target={'_blank'} rel='noreferrer'>Open in GitHub</a>
       </div>
       
     </div>

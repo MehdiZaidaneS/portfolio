@@ -13,15 +13,13 @@ const FrontPage: React.FC<FrontPageProps> = () => {
 
   const [contactShow, setContactShow] = useState(false);
 
-  document.onclick=function(){
-        setContactShow(!contactShow);
-    }  
-
-
   return (
     <div className={styles.header}>
       { contactShow=== true &&
-        <Contactme></Contactme>
+      <div className={styles.contactBlock}>
+          <Contactme/>
+          <button className={styles.buttonContact} onClick={() => setContactShow(!contactShow)}>Close</button>
+      </div>
       }
       <div className= {styles.pic}>
         <img src={img} alt='' width={200}height={320}></img>

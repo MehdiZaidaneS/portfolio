@@ -21,7 +21,7 @@ const Footer: React.FC<FooterProps> = () => {
   return (
     
       <div className={styles.socialMedia}>    
-        <a href="https://twitter.com/BarackObama" target={'_blank'} rel='noreferrer' >
+        <a href="https://twitter.com/MehdiZaidane" target={'_blank'} rel='noreferrer' >
           <FaTwitter />
         </a>
       

@@ -5,13 +5,13 @@ import { ImYahoo2 } from "react-icons/im"
 import styles from "./contactme.module.scss"
 
 type ContactmeProps = {
-
 }
 
 const Contactme: React.FC<ContactmeProps> = () => {
     const [copy , setCopy] = useState("Copy")
 
   return (
+    
     <div className={styles.contact}>
       <h1>Contact Me</h1>
 
@@ -35,8 +35,8 @@ const Contactme: React.FC<ContactmeProps> = () => {
         </a>
   
       </div>
-      
     </div>
+    
   )
 }
 

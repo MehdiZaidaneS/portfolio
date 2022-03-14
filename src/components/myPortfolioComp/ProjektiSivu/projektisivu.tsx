@@ -18,6 +18,7 @@ export type ProjektisivuProps = {
    language: string
    url: string
    id: number
+   link: string
 }
 
 const Projektisivu: React.FC<any> = (props) => {
@@ -35,7 +36,8 @@ const Projektisivu: React.FC<any> = (props) => {
           año: 2022,
           language: "C#",
           url: santa,
-          id: 0
+          id: 0,
+          link: "https://github.com/MehdiZaidaneS/SantaSnowScripts.git"
         },
         {
           title: "Tech Web",
@@ -43,7 +45,8 @@ const Projektisivu: React.FC<any> = (props) => {
           año: 2021,
           language: "HTML & CSS",
           url:techweb,
-          id: 1
+          id: 1,
+          link: "https://github.com/MehdiZaidaneS"
         },
         {
           title: "The Wolf Adventure",
@@ -51,7 +54,8 @@ const Projektisivu: React.FC<any> = (props) => {
           año: 2021,
           language: "C#",
           url: wolfgame,
-          id: 2
+          id: 2,
+          link: "https://github.com/varia-ict/varia-agile-20C-ryhma-1.git"
         },
         {
           title: "Dodge the Ball",
@@ -59,7 +63,8 @@ const Projektisivu: React.FC<any> = (props) => {
           año: 2021,
           language: "C#",
           url: dodgeball,
-          id: 3
+          id: 3,
+          link: "https://github.com/MehdiZaidaneS/DodgeBallGameScripts.git"
         },
         {
           title: "Supervivientes",
@@ -67,7 +72,8 @@ const Projektisivu: React.FC<any> = (props) => {
           año: 2021,
           language: "HTML & CSS",
           url: web,
-          id: 4
+          id: 4,
+          link: "https://github.com/MehdiZaidaneS/SupervivientesWeb.git"
         },
         {
           title: "RPG Game",
@@ -75,7 +81,8 @@ const Projektisivu: React.FC<any> = (props) => {
           año: 2021,
           language: "Java",
           url: java,
-          id:5
+          id:5,
+          link: "https://github.com/MehdiZaidaneS/RPG-Java.git"
         }
       ];
       if(props.location.state !== null){
@@ -93,7 +100,8 @@ const Projektisivu: React.FC<any> = (props) => {
         año: 2022,
         language: "C#",
         url: santa,
-        id: 0
+        id: 0,
+        link: "https://github.com/MehdiZaidaneS/SantaSnowScripts.git"
       },
       {
         title: "Tech Web",
@@ -101,7 +109,8 @@ const Projektisivu: React.FC<any> = (props) => {
         año: 2021,
         language: "HTML & CSS",
         url:techweb,
-        id: 1
+        id: 1,
+        link: "https://github.com/MehdiZaidaneS"
       },
       {
         title: "The Wolf Adventure",
@@ -109,7 +118,8 @@ const Projektisivu: React.FC<any> = (props) => {
         año: 2021,
         language: "C#",
         url: wolfgame,
-        id: 2
+        id: 2,
+        link: "https://github.com/varia-ict/varia-agile-20C-ryhma-1.git"
       },
       {
         title: "Dodge the Ball",
@@ -117,7 +127,8 @@ const Projektisivu: React.FC<any> = (props) => {
         año: 2021,
         language: "C#",
         url: dodgeball,
-        id: 3
+        id: 3,
+        link: "https://github.com/MehdiZaidaneS/DodgeBallGameScripts.git"
       },
       {
         title: "Supervivientes",
@@ -125,7 +136,8 @@ const Projektisivu: React.FC<any> = (props) => {
         año: 2021,
         language: "HTML & CSS",
         url: web,
-        id: 4
+        id: 4,
+        link: "https://github.com/MehdiZaidaneS/SupervivientesWeb.git"
       },
       {
         title: "RPG Game",
@@ -133,7 +145,8 @@ const Projektisivu: React.FC<any> = (props) => {
         año: 2021,
         language: "Java",
         url: java,
-        id:5
+        id:5,
+        link: "https://github.com/MehdiZaidaneS/RPG-Java.git"
       }
     ];  
 
@@ -217,7 +230,7 @@ const Projektisivu: React.FC<any> = (props) => {
             <AiOutlineCaretLeft size={30}/>
           </button>
 
-          <ShowProject title={currentItem.title} year={currentItem.año} url={currentItem.url} language={currentItem.language} description={currentItem.description} />
+          <ShowProject title={currentItem.title} year={currentItem.año} url={currentItem.url} language={currentItem.language} description={currentItem.description} link={currentItem.link} />
           <button className={styles.buttonRight} onClick={() => nextButtonHandler(currentItem)}><AiOutlineCaretRight size={30}></AiOutlineCaretRight></button>
         </div>
         <div className={styles.showButton}>
