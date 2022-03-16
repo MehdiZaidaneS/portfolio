@@ -2,11 +2,11 @@
     background-color: rgb(107, 100, 100);
     border: 1px solid white;
     width: 100%;
-    margin: 0 auto;
-    justify-content: center;
+    height:fit-content;
 }
 
 .contact h1{
+    padding-top: 10px;
     color: greenyellow;
     text-align: center;
     line-height: 0;
@@ -37,6 +37,7 @@
 .typeOfEmail{
     font-size: 30px;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .typeOfEmail a {

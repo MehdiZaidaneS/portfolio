@@ -41,9 +41,10 @@
     background: none;
 }
 
-@media screen and (max-width:600px) {
+ @media screen and (max-width:600px) {
     .boxOfWork{
-        width: fit-content;
+        width: 95%;
+        box-shadow: none;
     }
     
-}
+} 

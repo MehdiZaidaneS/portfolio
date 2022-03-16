@@ -22,9 +22,10 @@
     padding: 10px;
 }
 
-@media screen and (max-width:600px) {
+ @media screen and (max-width:600px) {
     .textAboutMe{
-        width: fit-content;
+        width: 95%;
+        box-shadow: none;
     }
     
-}
+} 

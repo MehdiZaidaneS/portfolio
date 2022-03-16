@@ -33,7 +33,6 @@
     text-align: center;
     line-height: 0;
     padding-top: 15px;
-    white-space: nowrap;
 }
 
 
@@ -216,4 +215,14 @@ strong {
         margin-top: 50px;
     }
 
+}
+
+@media screen and (max-width: 410px){
+    .firstColumn h1{
+        font-size: 60px;
+    }
+
+    .firstColumn p{
+        font-size: 18px;
+    }
 }

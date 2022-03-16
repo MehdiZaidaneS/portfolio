@@ -224,15 +224,16 @@ const Projektisivu: React.FC<any> = (props) => {
     { currentItem && 
   <div className={styles.show}>
         <div className={styles.block}>
-
-          <button className={styles.buttonLeft}
-            onClick={() => previousButtonHandler(currentItem)}>
-            <AiOutlineCaretLeft size={30}/>
-          </button>
+          <button className={styles.buttonLeft} onClick={() => previousButtonHandler(currentItem)}> <AiOutlineCaretLeft size={30}/></button>
 
           <ShowProject title={currentItem.title} year={currentItem.año} url={currentItem.url} language={currentItem.language} description={currentItem.description} link={currentItem.link} />
-          <button className={styles.buttonRight} onClick={() => nextButtonHandler(currentItem)}><AiOutlineCaretRight size={30}></AiOutlineCaretRight></button>
+          <div className={styles.middleButtons}>
+            <button className={styles.buttonLeft2} onClick={() => previousButtonHandler(currentItem)}> <AiOutlineCaretLeft size={30}/></button>
+            <button className={styles.buttonRight} onClick={() => nextButtonHandler(currentItem)}><AiOutlineCaretRight size={30}></AiOutlineCaretRight></button>
+          </div>
+          
         </div>
+
         <div className={styles.showButton}>
           <button onClick={ () => setItem(null)}>Hide Description</button>
           </div>

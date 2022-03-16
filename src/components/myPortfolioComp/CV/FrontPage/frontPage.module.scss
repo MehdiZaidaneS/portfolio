@@ -8,7 +8,7 @@
     width: 90%; 
 }
 
-.header div{
+.pic{
     padding: 20px;
 }
 
@@ -19,6 +19,11 @@
 .info{
     margin-top: 50px;
     color: white;
+    padding: 20px;
+}
+
+.info div{
+    padding: 20px;
 }
 
 .info h2{
@@ -83,17 +88,16 @@
     top: 50%;
     transform: translate(0, -50%);
     width: 40%;
+    justify-content: center;
     text-align: center;
-    line-height: 0;
 }
 
 .buttonContact{
- margin-left: 60px;
  background-color: rgb(107, 100, 100);
 }
 
 .buttonContact:hover{
-    margin-left: 60px;
+  
     color: greenyellow;
     background-color: rgb(107, 100, 100);   
    }
@@ -113,50 +117,50 @@
         font-size: 30px;
     }
 }
-
 @media screen and (max-width: 1400px) {
   .header{
-      width: fit-content;
-  }
+      width: 99%;
+  } 
 
 }
-
 @media screen and (max-width: 1122px) {
     .header{
         margin-top: 7px;
     }
-  }
-
-
+}
 @media screen and (max-width: 870px) {
    .pic{
        display: none;
    }
 
-   .header{
-    width: 100%;
-}
-
-.info{
+   .info{
     margin-top: 0px;
-}
+   }
 
-}
-
-
+   .contactBlock{
+    width: 85%; 
+   }
+} 
 @media screen and (max-width: 620px) {
   
+    .header{
+        width: 95%;
+    } 
+
+
     .firstName{
         display: none;
     }
 
     .secondName{
         display: block;
-        padding: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
  }
 
+ 
 
 
 

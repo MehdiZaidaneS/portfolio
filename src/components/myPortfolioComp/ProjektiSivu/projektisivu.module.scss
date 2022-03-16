@@ -4,6 +4,10 @@
     
 }
 
+.buttonLeft2{
+    display: none;
+}
+
 .nProjects div{
     text-align:center;
 }
@@ -56,9 +60,6 @@
     line-height: 0;
 }
 
-
-
-
 .buttons{
     display: none;
 }
@@ -106,6 +107,9 @@
     color: rgb(255, 255, 255);
 
 }
+.buttonRight{
+    height: 100%;
+}
 
 
 
@@ -145,5 +149,31 @@
     .nProjects{
         display: grid;
         grid-template-columns: repeat(1,1fr); 
+    }
+}
+
+@media screen and (max-width: 530px){
+    .block{
+        display: block;
+        text-align: justify;
+        justify-content: center;
+    }
+    
+    .buttonLeft{
+        display: none;
+    }
+
+    .buttonLeft2{
+        display: inline;
+
+    }
+
+    .middleButtons{
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .middleButtons button{
+        font-size: 10px;
     }
 }

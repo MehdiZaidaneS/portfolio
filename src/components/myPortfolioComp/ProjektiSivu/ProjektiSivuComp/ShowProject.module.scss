@@ -91,3 +91,10 @@
         margin-bottom: 10px;
     }
 }
+
+@media screen and (max-width:440px) {
+   .picture img {
+       width: 330px;
+       height: 210px;
+   }
+}
