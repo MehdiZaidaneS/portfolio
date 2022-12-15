@@ -11,8 +11,8 @@ const educations = [
     {
         id: 0,
         school: "Vantaan Ammattiopisto Varia",
-        title: "Tieto ja viestintä tekniikka",
-        years: "2020-2023",
+        title: "Tieto ja viestintä tekniikka (Ohjelmointi)",
+        years: "2020-2022",
         location: "Vantaa, Finland"
 
     },

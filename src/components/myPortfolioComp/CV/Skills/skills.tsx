@@ -33,23 +33,43 @@ const programmingskills = [
   {
     id: 0,
     name: "React",
-    level: "Good"
+    level: "Intermediate"
   },
   {
     id: 1,
     name: "Java",
-    level: "Good"
+    level: "Intermediate"
   },
   {
     id: 2,
-    name: "SQL",
-    level: "Basic"
+    name: "C#",
+    level: "Intermediate"
   },
   {
     id: 3,
-    name: "C#",
-    level: "Good"
+    name: "HTML & CSS",
+    level: "Excellent"
   },
+  {
+    id: 4,
+    name: "JavaScript",
+    level: "Intermediate"
+  },
+  {
+    id: 5,
+    name: "TypeScript",
+    level: "Intermediate"
+  },
+  {
+    id: 6,
+    name: "MongoDB",
+    level: "Basic"
+  },
+  {
+    id: 7,
+    name: "NodeJS",
+    level: "Basic"
+  },  
 ]
 
 const Skills: React.FC<SkillsProps> = () => {
