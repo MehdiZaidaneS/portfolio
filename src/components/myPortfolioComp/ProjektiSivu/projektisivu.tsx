@@ -7,6 +7,7 @@ import {AiOutlineCaretLeft, AiOutlineCaretRight } from "react-icons/ai";
 import wolfgame from "../media/wolfgame.jpg"
 import java from "../media/java.png"
 import techweb from "../media/techweb.jpg"
+import logreg from "../media/UserLogAndReg.jpg"
 import dodgeball from "../media/dodgeball.png"
 import ShowProject from './ProjektiSivuComp/ShowProject';
 import { useState } from 'react';
@@ -83,7 +84,17 @@ const Projektisivu: React.FC<any> = (props) => {
           url: java,
           id:5,
           link: "https://github.com/MehdiZaidaneS/RPG-Java.git"
+        },
+        {
+          title: "Log In & Register",
+          description: "Functional Login and Registration Form made with React and Firebase.",
+          año: 2022,
+          language: "React",
+          url: logreg,
+          id:6,
+          link: "https://github.com/MehdiZaidaneS/UserLogAndRegister.git"
         }
+
       ];
       if(props.location.state !== null){
            setItem(proyectos[props.location.state]) 
@@ -147,6 +158,15 @@ const Projektisivu: React.FC<any> = (props) => {
         url: java,
         id:5,
         link: "https://github.com/MehdiZaidaneS/RPG-Java.git"
+      },
+      {
+        title: "Log In & Register",
+        description: "Functional Login and Registration Form made with React and Firebase.",
+        año: 2022,
+        language: "React",
+        url: logreg,
+        id:6,
+        link: "https://github.com/MehdiZaidaneS/UserLogAndRegister.git"
       }
     ];  
 
@@ -209,6 +229,7 @@ const Projektisivu: React.FC<any> = (props) => {
                <button onClick={ () => {setLanguageShow("C#"); setYearShow(0);}}>C#</button>
                <button onClick={ () => {setLanguageShow("Java"); setYearShow(0);}}>Java</button>
                <button onClick={ () => {setLanguageShow("HTML & CSS"); setYearShow(0);}}>HTML</button>
+               <button onClick={ () => {setLanguageShow("React"); setYearShow(0);}}>React</button>
             </div>
         </li>
         <li>· Years
