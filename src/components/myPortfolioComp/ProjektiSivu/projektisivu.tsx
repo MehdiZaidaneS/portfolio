@@ -9,6 +9,7 @@ import java from "../media/java.png"
 import techweb from "../media/techweb.jpg"
 import logreg from "../media/UserLogAndReg.jpg"
 import dodgeball from "../media/dodgeball.png"
+import ChatApp from "../media/ChatApp.png"
 import ShowProject from './ProjektiSivuComp/ShowProject';
 import { useState } from 'react';
 
@@ -93,6 +94,15 @@ const Projektisivu: React.FC<any> = (props) => {
           url: logreg,
           id:6,
           link: "https://github.com/MehdiZaidaneS/UserLogAndRegister.git"
+        },
+        {
+          title: "Chat App",
+          description: "Functional Chat App made with React and Firebase.",
+          año: 2023,
+          language: "React",
+          url: ChatApp,
+          id:7,
+          link: "https://github.com/MehdiZaidaneS/ChatApp"
         }
 
       ];
@@ -167,6 +177,15 @@ const Projektisivu: React.FC<any> = (props) => {
         url: logreg,
         id:6,
         link: "https://github.com/MehdiZaidaneS/UserLogAndRegister.git"
+      },
+      {
+        title: "Chat App",
+        description: "Functional Chat App made with React and Firebase.",
+        año: 2023,
+        language: "React",
+        url: ChatApp,
+        id:7,
+        link: "https://github.com/MehdiZaidaneS/ChatApp"
       }
     ];  
 
@@ -234,8 +253,10 @@ const Projektisivu: React.FC<any> = (props) => {
         </li>
         <li>· Years
               <div className={styles.buttons}>
+                <button onClick={ () => setYearShow(2023)}>2023</button>
                 <button onClick={ () => setYearShow(2022)}>2022</button>
                 <button onClick={ () => setYearShow(2021)}>2021</button>
+
               </div>
         </li>
       </ul>
