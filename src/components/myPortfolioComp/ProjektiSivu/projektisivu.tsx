@@ -10,6 +10,7 @@ import techweb from "../media/techweb.jpg"
 import logreg from "../media/UserLogAndReg.jpg"
 import dodgeball from "../media/dodgeball.png"
 import ChatApp from "../media/ChatApp.png"
+import GymApp from "../media/gymapp.jpg"
 import ShowProject from './ProjektiSivuComp/ShowProject';
 import { useState } from 'react';
 
@@ -38,7 +39,7 @@ const Projektisivu: React.FC<any> = (props) => {
           año: 2022,
           language: "C#",
           url: santa,
-          id: 0,
+          id: 8,
           link: "https://github.com/MehdiZaidaneS/SantaSnowScripts.git"
         },
         {
@@ -47,7 +48,7 @@ const Projektisivu: React.FC<any> = (props) => {
           año: 2021,
           language: "HTML & CSS",
           url:techweb,
-          id: 1,
+          id: 7,
           link: "https://github.com/MehdiZaidaneS"
         },
         {
@@ -56,7 +57,7 @@ const Projektisivu: React.FC<any> = (props) => {
           año: 2021,
           language: "C#",
           url: wolfgame,
-          id: 2,
+          id: 6,
           link: "https://github.com/varia-ict/varia-agile-20C-ryhma-1.git"
         },
         {
@@ -65,7 +66,7 @@ const Projektisivu: React.FC<any> = (props) => {
           año: 2021,
           language: "C#",
           url: dodgeball,
-          id: 3,
+          id: 5,
           link: "https://github.com/MehdiZaidaneS/DodgeBallGameScripts.git"
         },
         {
@@ -83,7 +84,7 @@ const Projektisivu: React.FC<any> = (props) => {
           año: 2021,
           language: "Java",
           url: java,
-          id:5,
+          id:3,
           link: "https://github.com/MehdiZaidaneS/RPG-Java.git"
         },
         {
@@ -92,7 +93,7 @@ const Projektisivu: React.FC<any> = (props) => {
           año: 2022,
           language: "React",
           url: logreg,
-          id:6,
+          id:2,
           link: "https://github.com/MehdiZaidaneS/UserLogAndRegister.git"
         },
         {
@@ -101,8 +102,17 @@ const Projektisivu: React.FC<any> = (props) => {
           año: 2023,
           language: "React",
           url: ChatApp,
-          id:7,
+          id:1,
           link: "https://github.com/MehdiZaidaneS/ChatApp"
+        },
+        {
+          title: "Gym App",
+          description: "Application made with react that facilitates your progress in the gym. Count the kilos that you will have to use in each set and the necessary rest.",
+          año: 2023,
+          language: "React",
+          url: GymApp,
+          id:0,
+          link: "https://github.com/MehdiZaidaneS/gymapp"
         }
 
       ];
@@ -121,7 +131,7 @@ const Projektisivu: React.FC<any> = (props) => {
         año: 2022,
         language: "C#",
         url: santa,
-        id: 0,
+        id: 8,
         link: "https://github.com/MehdiZaidaneS/SantaSnowScripts.git"
       },
       {
@@ -130,7 +140,7 @@ const Projektisivu: React.FC<any> = (props) => {
         año: 2021,
         language: "HTML & CSS",
         url:techweb,
-        id: 1,
+        id: 7,
         link: "https://github.com/MehdiZaidaneS"
       },
       {
@@ -139,7 +149,7 @@ const Projektisivu: React.FC<any> = (props) => {
         año: 2021,
         language: "C#",
         url: wolfgame,
-        id: 2,
+        id: 6,
         link: "https://github.com/varia-ict/varia-agile-20C-ryhma-1.git"
       },
       {
@@ -148,7 +158,7 @@ const Projektisivu: React.FC<any> = (props) => {
         año: 2021,
         language: "C#",
         url: dodgeball,
-        id: 3,
+        id: 5,
         link: "https://github.com/MehdiZaidaneS/DodgeBallGameScripts.git"
       },
       {
@@ -166,7 +176,7 @@ const Projektisivu: React.FC<any> = (props) => {
         año: 2021,
         language: "Java",
         url: java,
-        id:5,
+        id:3,
         link: "https://github.com/MehdiZaidaneS/RPG-Java.git"
       },
       {
@@ -175,7 +185,7 @@ const Projektisivu: React.FC<any> = (props) => {
         año: 2022,
         language: "React",
         url: logreg,
-        id:6,
+        id:2,
         link: "https://github.com/MehdiZaidaneS/UserLogAndRegister.git"
       },
       {
@@ -184,8 +194,17 @@ const Projektisivu: React.FC<any> = (props) => {
         año: 2023,
         language: "React",
         url: ChatApp,
-        id:7,
+        id:1,
         link: "https://github.com/MehdiZaidaneS/ChatApp"
+      },
+      {
+        title: "Gym App",
+        description: "Application made with react that facilitates your progress in the gym. Count the kilos that you will have to use in each set and the necessary rest.",
+        año: 2023,
+        language: "React",
+        url: GymApp,
+        id:0,
+        link: "https://github.com/MehdiZaidaneS/gymapp"
       }
     ];  
 
